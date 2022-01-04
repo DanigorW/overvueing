@@ -7,7 +7,7 @@
           contentTitle="Default"
           title="Asynchronous vs synchronous"
           content="In some point you will have to fetch some data from any backend api and store the data in your state and use is in 
-          your app, in vue world you have to do it in the right way, for that you have mutations & actions, mutations is for updating the state with synchronous action only, actions is for asynchronous code that runs in the background - note - actions & mutations can receive second argument 'payload' that can update the state from component or any user action that change the state.
+          your app, in vue world you have to do it in the right way, for that you have mutations & actions, mutations is for updating the state with synchronous action only, actions is for asynchronous code that runs in the background and then commits mutations that update the state.
           "
           codeblock="
 export default {
@@ -16,17 +16,21 @@ export default {
        users:[]
    },
    mutations: {
-       INCREMENT_COUNTER(state,payload){
+       INCREMENT_COUNTER(state){
            <!-- synchronous code that update the counter -->
-           return state.counter++
+           state.counter++
+       },
+
+       UPDATE_USERS(state,payload){
+           state.users = payload
        } 
    },
    actions: {
-            <!-- asynchronous code that update the users array -->
-        FETCH_USERS(state,payload){
+          <!-- asynchronous code that update the users array with mutations  -->
+        FETCH_USERS({commit}){
             fetch logic....
-            state.users = data from fetch
-       }
+            commit('UPDATE_USERS',data)       
+          }
    },
    getters: {
        [SOME_GETTER](state){

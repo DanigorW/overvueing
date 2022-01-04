@@ -6,7 +6,7 @@
         type="code"
         contentTitle="Default"
         title="Folder structure"
-        content="By default after creating new vue project with the cli the store folder structure is very basic, it's good for learning and very small apps, for bigger apps the best way to structure the state folder is to split it to models for better and easy maintenance, you can clearly see in the example below why it's more easy to maintenance modules structure."
+        content="By default after creating new vue project with the cli the store folder structure is very basic, it's good for learning and very small apps, for bigger apps the best way to structure the state folder is to split it to modules for better and easy maintenance, you can clearly see in the example below why it's more easy to maintenance modules structure."
       />
     </div>
   </div>

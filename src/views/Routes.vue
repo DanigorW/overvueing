@@ -3,6 +3,9 @@
     <Header />
     <Example />
     <UseRoutes />
+    <Programmatic />
+    <Guards />
+    <PageError />
   </div>
 </template>
 
@@ -20,6 +23,18 @@ export default {
     UseRoutes: () =>
       import(
         /* webpackChunkName: "UseRoutes" */ "../components/routes/UseRoutes.vue"
+      ),
+    Programmatic: () =>
+      import(
+        /* webpackChunkName: "Programmatic" */ "../components/routes/Programmatic.vue"
+      ),
+    Guards: () =>
+      import(
+        /* webpackChunkName: "Guards" */ "../components/routes/Guards.vue"
+      ),
+    PageError: () =>
+      import(
+        /* webpackChunkName: "PageError" */ "../components/routes/PageError.vue"
       ),
   },
 };

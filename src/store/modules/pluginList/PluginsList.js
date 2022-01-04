@@ -21,6 +21,11 @@ export default {
                 npm: "npm i vueperslides"
             },
             {
+                title: "GSAP complex animations",
+                installation: "https://greensock.com/",
+                npm: "npm install gsap"
+            },
+            {
                 title: "AOS animations",
                 installation: "https://www.npmjs.com/package/vue-aos",
                 npm: "npm install vue-aos --save"
