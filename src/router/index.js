@@ -29,6 +29,11 @@ const routes = [{
     name: 'Routes',
     component: () => import( /* webpackChunkName: "Routes" */ '../views/Routes.vue')
   },
+  {
+    path: '/components',
+    name: 'Components',
+    component: () => import( /* webpackChunkName: "Routes" */ '../views/Components.vue')
+  },
 
   {
     path: "/:catchAll(.*)*",

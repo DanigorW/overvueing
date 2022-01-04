@@ -6,6 +6,7 @@
     <Programmatic />
     <Guards />
     <PageError />
+    <CssControl />
   </div>
 </template>
 
@@ -35,6 +36,10 @@ export default {
     PageError: () =>
       import(
         /* webpackChunkName: "PageError" */ "../components/routes/PageError.vue"
+      ),
+    CssControl: () =>
+      import(
+        /* webpackChunkName: "CssControl" */ "../components/routes/CssControl.vue"
       ),
   },
 };

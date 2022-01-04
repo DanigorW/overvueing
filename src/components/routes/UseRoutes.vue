@@ -16,7 +16,7 @@
 
   <!-- better way X1 -->
   <div class='router-links' v-for='(route, index) in GET_ALL_ROUTES' :key='index'>
-        <router-link :to='{ name: route.name, query: $route.query }'>{{}}</router-link>
+        <router-link :to='{ name: $route.name, query: $route.query }'>{{}}</router-link>
   </div>
 </template>
 

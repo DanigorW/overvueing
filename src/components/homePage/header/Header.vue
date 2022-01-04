@@ -1,14 +1,12 @@
 <template>
   <div id="home-page-header" class="padding20">
-    <div class="igor-img">
-      <img src="../../../../src/assets/igor.png" alt="" />
-    </div>
-
-    <div class="home-page-text">
-      <h1 class="frontend">frontend</h1>
-      <h1 class="developer">developer</h1>
-      <h1 class="specialized">specializing</h1>
-      <h1 class="invue">in <span class="vue-color-green">vue</span></h1>
+    <div class="container">
+      <div class="home-page-text">
+        <h1 class="frontend">frontend</h1>
+        <h1 class="developer">developer</h1>
+        <h1 class="specialized">specializing</h1>
+        <h1 class="invue">in <span class="vue-color-green">vue</span></h1>
+      </div>
     </div>
   </div>
 </template>
@@ -16,12 +14,60 @@
 <script>
 export default {
   mounted() {
+    this.gsap.from(".frontend", 1.8, {
+      y: 100,
+
+      ease: "power4.out",
+      opacity: 0,
+      skewY: 7,
+      skewX: 7,
+      stagger: {
+        amount: 0,
+      },
+    });
+    this.gsap.from(".developer", 1.8, {
+      y: 100,
+
+      ease: "power4.out",
+      delay: 0.1,
+      opacity: 0,
+      skewY: 7,
+      skewX: 7,
+      stagger: {
+        amount: 0,
+      },
+    });
+    this.gsap.from(".specialized", 1.8, {
+      y: 100,
+
+      ease: "power4.out",
+      delay: 0.2,
+      opacity: 0,
+      skewY: 7,
+      skewX: 7,
+      stagger: {
+        amount: 0,
+      },
+    });
+    this.gsap.from(".invue", 1.8, {
+      y: 100,
+
+      ease: "power4.out",
+      delay: 0.3,
+      opacity: 0,
+      skewY: 7,
+      skewX: 10,
+      stagger: {
+        amount: 0,
+      },
+    });
     this.gsap.to(".frontend", {
       scrollTrigger: {
         trigger: "#home-page-header",
         scrub: 3,
         start: 1,
       },
+
       x: 1000,
     });
     this.gsap.to(".developer", {
@@ -55,31 +101,33 @@ export default {
 <style scoped>
 #home-page-header {
   position: relative;
-  height: 93vh;
+  height: 100vh;
   background: rgb(255, 255, 255);
   background: linear-gradient(
-    100deg,
+    40deg,
     rgba(255, 255, 255, 1) 70%,
     rgba(255, 255, 255, 1) 70%,
     rgba(65, 184, 131, 1) 54%
   );
 }
 
-.igor-img {
+/* .igor-img {
   position: absolute;
   right: 350px;
   bottom: -5px;
   z-index: 10000;
-}
+} */
 
-.igor-img img {
+/* .igor-img img {
   width: 400px;
   transform: scaleX(-1);
-}
+} */
 
 .home-page-text {
   margin-top: 180px;
-  margin-left: 250px;
+  /* margin-left: 250px; */
+  z-index: 100;
+  position: relative;
 }
 
 .home-page-text h1 {

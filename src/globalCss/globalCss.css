@@ -79,6 +79,12 @@ img {
   border-radius: 8px;
 }
 
+::selection {
+  background: #41b883;
+  color: #fff;
+
+}
+
 .router-link-exact-active {
   color: #41b883;
   font-weight: bold;
