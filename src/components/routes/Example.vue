@@ -1,30 +1,55 @@
 <template>
-  <div id="example">
-    <Example
-      leftTitle="First option"
-      :leftImg="defaultImg"
-      rightTitle="Second option"
-      :rightImg="modulesImg"
-    />
-  </div>
+    <div id="example">
+        <div class="container">
+            <CodeBlock
+                type="code"
+                title="Default"
+                codeblock="
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+import Home from '../views/Home.vue'
+
+Vue.use(VueRouter)
+
+const routes = [
+  {
+    path: '/',
+    name: 'Home',
+    component: Home
+  },
+]
+"
+            />
+            <CodeBlock
+                type="code"
+                title="Code split & lazy loading"
+                codeblock="
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+
+Vue.use(VueRouter)
+
+const routes = [
+  {
+    path: '/home',
+    name: 'Home',
+    component: () => import(/* webpackChunkName: 'Home' */ '../views/Home.vue')
+  }
+]
+            "
+            />
+        </div>
+    </div>
 </template>
 
 <script>
-import defaultImg from "../../assets/routes/first-option.png";
-import modulesImg from "../../assets/routes/second-option.png";
 export default {
-  data() {
-    return {
-      defaultImg,
-      modulesImg,
-    };
-  },
-  components: {
-    Example: () =>
-      import(
-        /* webpackChunkName: "Example" */ "../globalComponents/example/Example.vue"
-      ),
-  },
+    components: {
+        CodeBlock: () =>
+            import(
+                /* webpackChunkName: "CodeBlock" */ "../globalComponents/codeBlock/CodeBlock.vue"
+            ),
+    },
 };
 </script>
 

@@ -3,45 +3,25 @@
         <div class="container">
             <CodeBlock
                 type="code"
-                title="Normal"
+                title="Array"
                 codeblock="
-<template>
-     <header id='main-header' class='bg-grey'>
-        <div class='container'>
-          <h3>I'M A TITLE</h3>
-        </div>
-    </header>
-</template>  
-
-<style scoped>
-  .bg-grey {
-    backgrouund: grey;
-  }
-</style>
+<script>
+export default {
+    props: ['title', 'content'],
+};
+</script>
             "
             />
             <CodeBlock
                 type="code"
-                title="With props"
+                title="Object"
                 codeblock="
-<template>
-     <header :class='type === 'normal' ? 'bg-grey' : 'bg-red'' id='main-header'>
-        <div class='container'>
-          <h3>{{}}</h3> <- title prop
-        </div>
-    </header>
-</template>  
-
 export default {
     
     <!-- NOTE it's not possible to use required
      and default in the same time only onc can added -->
     
     props: {
-        type:{
-          default:'normal'
-        },
-
         title: {
             type: String,
             required: true,
@@ -52,15 +32,6 @@ export default {
         },
     },
 };
-
-<style scoped>
-  .bg-grey {
-    backgrouund: grey;
-  }
-  .bg-red {
-    backgrouund: red;
-  }
-</style>
 "
             />
         </div>
