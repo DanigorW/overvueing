@@ -1,7 +1,9 @@
 export default {
     state: {
         isSidebarOpen: true,
-        routes: ['Home', 'Installation', 'Plugins', 'State', 'Routes', 'Props', 'Components', 'Lifecycle']
+        routes: ['Home', 'Installation', 'Plugins', 'State', 'Routes', 'Props',
+            'Components', 'Lifecycle', 'Watchers', 'Mixins'
+        ]
     },
     mutations: {
         SET_IS_SIDE_BAR_OPEN(state) {
