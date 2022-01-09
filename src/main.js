@@ -11,10 +11,12 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger)
 
+
+
 Vue.mixin({
-  created: function () {
-    this.gsap = gsap;
-  }
+    created: function() {
+        this.gsap = gsap;
+    }
 });
 
 
@@ -23,9 +25,9 @@ Vue.mixin({
 Vue.config.productionTip = false
 
 new Vue({
-  globalCss,
-  animations,
-  router,
-  store,
-  render: h => h(App)
+    globalCss,
+    animations,
+    router,
+    store,
+    render: h => h(App)
 }).$mount('#app')

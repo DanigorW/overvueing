@@ -1,8 +1,9 @@
 export default {
     state: {
         isSidebarOpen: true,
-        routes: ['Home', 'Installation', 'Plugins', 'State', 'Routes', 'Props',
-            'Components', 'Lifecycle', 'Watchers', 'Mixins'
+        routes: ['Home', 'Installation', 'Components', 'Props', 'Lifecycle',
+            'Watchers', 'Routes', 'State', 'Mixins', 'Filters', 'Directives',
+            'Fetch data', 'Forms', 'Plugins'
         ]
     },
     mutations: {
