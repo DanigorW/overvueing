@@ -11,7 +11,7 @@
 export default {
     created(){
         <!-- fetch data from backend logic or use action
-         that commit a mutations to do that -->
+         that commits a mutations to do that -->
     },
 }
 </script>          

@@ -4,8 +4,8 @@
             type="code"
             title="Global mixins"
             content="
-            I'ts possible to create global mixin and use it like normal function any where you want widout importing from mixins folder/file, 
-            NOTE - try to avoide using global mixins it can create a strange behavior and run to many time without you knowing.
+            It is possible to create global mixin and use it like normal function anywhere you want without importing from mixins folder/file, 
+            NOTE - try to avoide using global mixins, it can create a strange behavior and run more times than what you are expecting.
             "
             codeblock="
 src\main.js

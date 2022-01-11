@@ -7,9 +7,9 @@
         codeblock="
 <template>
   <div>
-    <button @click='selectedComponent = 'UserSettings''>go to User settings</button>
-    <button @click='selectedComponent = 'AccountInfo''>go to account info</button>
-    <button @click='selectedComponent = 'Payment'>go to payment</button>
+    <button @click='selectedComponent = 'UserSettings''>Go to user settings</button>
+    <button @click='selectedComponent = 'AccountInfo''>Go to account info</button>
+    <button @click='selectedComponent = 'Payment'>Go to payment</button>
 
     <!-- will display the selected component -->
     <component :is='selectedComponent'></component>

@@ -7,7 +7,7 @@
           contentTitle="Default"
           title="How to use in components"
           content="
-          All your state functionality is ready to use, vue provide the option to map all the data for you in very easy way from any component (don't forget that behind the scenes vue merge all your modules to the main store/index file) 
+          All your state functionality is ready to use, vue provide the option to map all the data for you in very easy way from any component (don't forget that behind the scenes Vue merges all your modules to the main store/index file) 
           "
           codeblock="
 <template>

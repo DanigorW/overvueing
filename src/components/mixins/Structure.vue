@@ -3,8 +3,8 @@
     <CodeBlock
       type="code"
       title="Mixins structure"
-      content="Mixin object can contain any component options, for this example i'll use methods object.
-      i created global debounce function that i can use now in every place in my app, any event that will need a debounce functionality can have access to this method.
+      content="Mixin object can contain any component options, for this example I'll use methods object.
+      I've created a global debounce function that I can use now in every place in my app, any event that will need a debounce functionality can have access to this method.
       "
       codeblock="
 src/mixins/globalDebounce.js

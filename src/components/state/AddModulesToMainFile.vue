@@ -10,7 +10,7 @@ file - src\store\store.js (or index.js)
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-<!-- importing the modules files -->
+<!-- Importing the modules files -->
 
 import Nav from './modules/nav/Nav'
 import PluginsList from './modules/pluginList/PluginsList'

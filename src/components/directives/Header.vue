@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <PageHeader title="Directives in vue" />
+        <PageHeader title="Directives in Vue" />
         <CodeBlock
             type="code"
             title="directives in general"

@@ -35,7 +35,7 @@
 export default {
     
     <!-- NOTE it's not possible to use required
-     and default in the same time only onc can added -->
+     and default in the same time, only one can be added -->
     
     props: {
         type:{
