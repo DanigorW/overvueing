@@ -3,7 +3,7 @@ export default {
         isSidebarOpen: true,
         routes: ['Home', 'Installation', 'Components', 'Props', 'Lifecycle',
             'Watchers', 'Routes', 'State', 'Computed', 'Mixins', 'Filters', 'Directives',
-            'Fetch data', 'Forms', 'Plugins'
+            'Fetch', 'Forms', 'Plugins'
         ]
     },
     mutations: {
