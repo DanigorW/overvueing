@@ -77,5 +77,6 @@ code {
   background: #263849;
   border-radius: 8px;
   padding-left: 10px;
+  overflow-x: auto;
 }
 </style>

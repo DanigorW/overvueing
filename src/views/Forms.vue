@@ -3,6 +3,7 @@
     <Header />
     <Basic />
     <TheRightWay />
+    <HowToUse />
   </div>
 </template>
 
@@ -16,6 +17,10 @@ export default {
     TheRightWay: () =>
       import(
         /* webpackChunkName: "TheRightWay" */ "../components/forms/TheRightWay.vue"
+      ),
+    HowToUse: () =>
+      import(
+        /* webpackChunkName: "HowToUse" */ "../components/forms/HowToUse.vue"
       ),
   },
 };
