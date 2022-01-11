@@ -4,7 +4,7 @@
       type="code"
       title="How to use in components"
       content="To use our mixin we will need to import it like we do with mapActions etc...
-      this is a complex example (in purpose) to show you how to work with state,functions,v-model and mixins
+      This is a complex example (in purpose) to show you how to work with state, functions, v-model and mixins
       at the same time
       "
       codeblock="
@@ -41,18 +41,18 @@ export default {
     },
 
   methods: {
-        <!-- GLOBAL fetch from state that commit a mutations  -->
+        <!-- GLOBAL fetch from state that commits a mutations  -->
         ...mapActions(['FETCH_USER_DATA']),    
   },  
 
   mounted() {  
-        <!-- this.debounce coming from globalDebounce import
+        <!-- this.debounce is coming from globalDebounce import
         we need to use THIS to access it, 
-        behind the scenes he is injected to the methods object 
+        behind the scene it is injected to the methods object 
          -->
          <!--
            
-          this.getDataFunc on mounted() become new functions with debounce option 
+          this.getDataFunc on mounted() becomes a new function with the debounce option 
           and we are using it on user input event with PAYLOAD connected with V-MODAL to the user value   
            -->
         this.getDataFunc = this.debounce(this.FETCH_USER_DATA, 500);

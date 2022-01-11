@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <PageHeader title="Filters in vue" />
+        <PageHeader title="Filters in Vue" />
         <CodeBlock
             type="code"
             title="Filters in general"

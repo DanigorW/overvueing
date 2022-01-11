@@ -7,7 +7,7 @@
           contentTitle="Default"
           title="Modules js file structure"
           content="All the js files in the modules folder have the same structure as the main store/index file,
-          state, mutations, action and getters. behind the scenes all the modules files merge into the main store file (on build and on every save)  
+          state, mutations, action and getters. Behind the scenes all the modules files are merged into the main store file (on build and on every save)  
           "
           codeblock="
 export default {

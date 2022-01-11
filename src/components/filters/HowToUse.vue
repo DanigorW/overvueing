@@ -8,7 +8,7 @@
 <template>
     <div>
        your text value | capitalize
-       { name | capitalize } <- NOTE - it's need to be in double curly brackets!
+       { name | capitalize } <- NOTE - it needs to be in double curly brackets!
     </div>
 </template>
 

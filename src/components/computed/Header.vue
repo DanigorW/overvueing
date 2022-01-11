@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <PageHeader title="Computed properties in vue" />
+    <PageHeader title="Computed properties in Vue" />
     <CodeBlock
       type="code"
       title="Computed properties"

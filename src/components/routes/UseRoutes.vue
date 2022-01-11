@@ -5,9 +5,9 @@
         type="code"
         contentTitle="Default"
         title="Navigation links"
-        content="Navigate between pages with <router-link>, we will use the :to option to bind the route to any name from our router file,
-            in must apps you will need to get user url query params and share them between routes (pages) - so we will add the option as well,
-            think about your navigate for a sec, lest say you have 10 different routes in your app - what you will do? one option is to create 10 different router-link and it will be ok BUT what if tomorrow for some reason you need to have 30 routes? you see where i'm going with that? the better way is to create navigate modules in you state and use mapGetters to get all the routes and loop through team and create the HTML stretcher only onc.  
+        content="In order to navigate between pages with <router-link>, we will use the :to option to bind the route to any name from our router file,
+            in most apps you will need to get user url query params and share them between routes (pages) - so we will add this option as well,
+            think about your navigation for a sec, lets say you have 10 different routes in your app - what you will do? One option is to create 10 different router-links and it will be ok BUT what if tomorrow for some reason you need to have 30 routes? You see where I'm going with that? The better way is to create the navigation modules in you state and use mapGetters to get all the routes, loop through them and create the HTML structure only once.  
          "
         codeblock="
 <template>

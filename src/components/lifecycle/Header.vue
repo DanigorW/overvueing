@@ -4,8 +4,8 @@
     <CodeBlock
       type="code"
       title="Lifecycle in general"
-      content="Lifecycle in components it's the way to control things that we want to happen before or after 
-      the component rendered to the dom in most of the times, if you need to fetch data from any backend api on page load 
+      content="Lifecycle in components is the way to control things that we want to happen before or after 
+      the component is rendered to the dom. Most of the times, if you need to fetch data from any backend api on page load 
       you will use lifecycle hook to do so.
             "
     />

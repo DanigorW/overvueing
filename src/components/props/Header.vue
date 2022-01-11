@@ -5,8 +5,8 @@
             type="code"
             title="Props in components"
             content="We can control components logic and appearance (style/class) with props,
-            vue provide two different ways to add props, the first one is with simple array syntax and the second one with
-            is with object syntax that provid more options such types (ts), default values and more.
+            Vue provides two different ways to add props, the first one is with simple array syntax and the second one
+            is with object syntax that provides more options such as types (ts), default values and more.
             "
         />
     </div>

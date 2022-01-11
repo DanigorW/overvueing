@@ -7,7 +7,7 @@
         codeblock="
 <template>
   <div>
-    <button @click='selectedComponent = 'UserSettings''>Go to User settings</button>
+    <button @click='selectedComponent = 'UserSettings''>Go to user settings</button>
     <button @click='selectedComponent = 'AccountInfo''>Go to account info</button>
     <button @click='selectedComponent = 'Payment'>Go to payment</button>
 
