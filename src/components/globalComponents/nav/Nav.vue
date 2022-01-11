@@ -3,7 +3,7 @@
     <div class="container">
       <div class="nav-container">
         <div class="logo">
-          <h3>HOW YOU <span class="vue-color-green">VUEING</span></h3>
+          <h3>OVER<span class="vue-color-green">VUE</span>ING</h3>
         </div>
 
         <div
