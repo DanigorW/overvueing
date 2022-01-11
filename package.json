@@ -1,5 +1,5 @@
 {
-    "name": "how-to",
+    "name": "overvueing",
     "version": "0.1.0",
     "private": true,
     "scripts": {
@@ -35,7 +35,7 @@
         "type": "git",
         "url": "git+https://github.com/DanigorW/how-you-vueing.git"
     },
-    "author": "",
+    "author": "Igor Lev",
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/DanigorW/how-you-vueing/issues"
