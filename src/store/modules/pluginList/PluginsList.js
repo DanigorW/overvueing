@@ -11,6 +11,11 @@ export default {
                 npm: "npm install @braid/vue-formulate"
             },
             {
+                title: "Axios",
+                installation: "https://www.npmjs.com/package/vue-axios",
+                npm: "npm install axios vue-axios"
+            },
+            {
                 title: "Click away to close any element",
                 installation: "https://www.npmjs.com/package/vue-clickaway",
                 npm: "npm install vue-clickaway "

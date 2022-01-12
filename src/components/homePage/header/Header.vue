@@ -111,18 +111,6 @@ export default {
   );
 }
 
-/* .igor-img {
-  position: absolute;
-  right: 350px;
-  bottom: -5px;
-  z-index: 10000;
-} */
-
-/* .igor-img img {
-  width: 400px;
-  transform: scaleX(-1);
-} */
-
 .home-page-text {
   margin-top: 180px;
   /* margin-left: 250px; */

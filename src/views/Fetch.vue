@@ -4,6 +4,7 @@
     <Classic />
     <Async />
     <Post />
+    <Axios />
     <FetchWithVue />
     <PromiseAll />
   </div>
@@ -30,6 +31,8 @@ export default {
       import(
         /* webpackChunkName: "PromiseAll" */ "../components/fetch/PromiseAll.vue"
       ),
+    Axios: () =>
+      import(/* webpackChunkName: "Axios" */ "../components/fetch/Axios.vue"),
   },
 };
 </script>

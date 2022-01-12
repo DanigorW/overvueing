@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" :class="IS_SIDE_BAR_OPEN ? 'no-scroll' : ''">
     <Nav />
     <Sidebar />
     <router-view
@@ -12,6 +12,12 @@
 <script>
 import { mapGetters, mapMutations } from "vuex";
 export default {
+  data() {
+    return {
+      width: false,
+    };
+  },
+
   computed: {
     ...mapGetters(["IS_SIDE_BAR_OPEN"]),
   },
@@ -31,13 +37,19 @@ export default {
       ),
   },
 
+  watch: {
+    $route() {
+      this.width ? this.SET_IS_SIDE_BAR_OPEN() : "";
+    },
+  },
+
   created() {
     if (window.innerWidth <= 768) {
-      this.SET_IS_SIDE_BAR_OPEN();
+      this.width = true;
     }
   },
 };
 </script>
 
-<style lang="scss">
+<style>
 </style>

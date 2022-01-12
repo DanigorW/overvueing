@@ -97,10 +97,20 @@ input {
     border: 1px solid #41b883;
 }
 
+.no-scroll {
+    overflow: hidden !important;
+}
+
 @media(max-width:1000px) {
     .width87 {
         width: calc(100% - 180px);
         transition: all 0.5s;
     }
 
+}
+
+@media(max-width:500px) {
+    .container {
+        padding: 0;
+    }
 }

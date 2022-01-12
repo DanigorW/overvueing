@@ -74,10 +74,13 @@ export default {
   width: 250px;
   background: #32475b;
   color: #fff;
+  z-index: 1000000;
+  overflow-y: auto;
 }
 
 a {
   margin-bottom: 10px;
+  font-size: 20px;
 }
 
 .router-links {
@@ -88,6 +91,11 @@ a {
 @media (max-width: 1000px) {
   #sidebar {
     width: 200px;
+  }
+}
+@media (max-width: 500px) {
+  #sidebar {
+    width: 100%;
   }
 }
 </style>

@@ -1,12 +1,12 @@
 <template>
-    <div class="container">
-        <CodeBlock
-            type="code"
-            title="Async await in state"
-            content="
+  <div class="container">
+    <CodeBlock
+      type="code"
+      title="Async await in vuex"
+      content="
 
             "
-            codeblock="
+      codeblock="
 src/store/modules/users.js
 
 export default {
@@ -44,19 +44,19 @@ export default {
     },
 }
             "
-        />
-    </div>
+    />
+  </div>
 </template>
 
 <script>
 export default {
-    beforeCreate() {},
-    components: {
-        CodeBlock: () =>
-            import(
-                /* webpackChunkName: "CodeBlock" */ "../globalComponents/codeBlock/CodeBlock.vue"
-            ),
-    },
+  beforeCreate() {},
+  components: {
+    CodeBlock: () =>
+      import(
+        /* webpackChunkName: "CodeBlock" */ "../globalComponents/codeBlock/CodeBlock.vue"
+      ),
+  },
 };
 </script>
 
