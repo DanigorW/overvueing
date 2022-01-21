@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Quicksand&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap");
-
 * {
     padding: 0;
     margin: 0;
@@ -101,12 +100,34 @@ input {
     overflow: hidden !important;
 }
 
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #32475b;
+    border-radius: 10px;
+}
+
 @media(max-width:1000px) {
     .width87 {
         width: calc(100% - 180px);
         transition: all 0.5s;
     }
-
 }
 
 @media(max-width:500px) {

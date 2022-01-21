@@ -4,26 +4,26 @@
             type="code"
             title="Global"
             content="
-      You can define local directives in a component’s options:
+      You can define global directives that can be used in any component. 
             "
             codeblock="
 src/main.js
 
-Vue.directives('highlight', {
-    bind(el,binding,vnode){ 
-      let delay = 0;
-      if(binding.modifiers['delayed']){
-          delay = 3000;
+Vue.directives('background', {
+       bind(el, binding,vnode) {
+       // Allow users to customise the color by passing an expression.
+       const defaultBackgroundColor = '#86bbff'
+       const color = binding.expression || defaultBackgroundColor;
+
+       // el might not be present for server-side rendering.
+       if (el) {
+       // Set the element's background color.
+       el.style.backgroundColor = color;
       }
-      
-      setTimeout(() => {
-           if(binding.arg == 'background'){
-           el.style.background = binding.value;
-      } else {
-           el.style.color = binding.value;
-       }
-      },delay)
-    }
+     },
+    },
+   },
+  } 
 })
 "
         />

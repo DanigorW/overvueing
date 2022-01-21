@@ -1,9 +1,10 @@
 export default {
     state: {
         isSidebarOpen: true,
-        routes: ['Home', 'Installation', 'Components', 'Props', 'Lifecycle',
-            'Watchers', 'Routes', 'State', 'Computed', 'Mixins', 'Filters', 'Directives',
-            'Fetch', 'Forms', 'Plugins'
+        routes: ['Home', 'Installation', 'Components', 'Computed', 'Lifecycle', 'Props',
+            'Watchers', 'Routes', 'State', 'Mixins', 'Filters', 'Directives',
+            'Fetch', 'Forms', 'Attr', 'Slots', 'Transition', 'Webpack', 'Seo', 'Sitemap',
+            'Algos', 'Vanilla js', 'Regex', 'Plugins'
         ]
     },
     mutations: {

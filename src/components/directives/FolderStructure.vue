@@ -2,14 +2,19 @@
     <div class="container">
         <CodeBlock
             type="code"
-            title="How to use"
+            title="Folder Structure"
             codeblock="
-//defult option without expression            
-<p v-background>Baby blue looks good on me.</p>
+//directive file
+src/components/directives/click-ouside.js
 
-//option with expression
-<p v-background='green'>I prefer neon green.</p>
-"
+//directives folder
+src/plugins/globalDirectives.js
+
+import Vue from 'vue';
+import clickOutside from '../directives/click-ouside.js';
+Vue.use(clickOutside)
+
+        "
         />
     </div>
 </template>

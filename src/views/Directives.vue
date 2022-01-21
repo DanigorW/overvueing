@@ -4,6 +4,8 @@
         <Local />
         <Global />
         <HowToUse />
+        <Complex />
+        <FolderStructure />
     </div>
 </template>
 
@@ -25,6 +27,14 @@ export default {
         HowToUse: () =>
             import(
                 /* webpackChunkName: "HowToUse" */ "../components/directives/HowToUse.vue"
+            ),
+        Complex: () =>
+            import(
+                /* webpackChunkName: "Complex" */ "../components/directives/Complex.vue"
+            ),
+        FolderStructure: () =>
+            import(
+                /* webpackChunkName: "FolderStructure" */ "../components/directives/FolderStructure.vue"
             ),
     },
 };
