@@ -6,6 +6,7 @@
         <HowToUse />
         <Complex />
         <FolderStructure />
+        <Nuxt />
     </div>
 </template>
 
@@ -35,6 +36,10 @@ export default {
         FolderStructure: () =>
             import(
                 /* webpackChunkName: "FolderStructure" */ "../components/directives/FolderStructure.vue"
+            ),
+        Nuxt: () =>
+            import(
+                /* webpackChunkName: "Nuxt" */ "../components/directives/Nuxt.vue"
             ),
     },
 };

@@ -2,26 +2,18 @@
     <div class="container">
         <CodeBlock
             type="code"
-            title="Folder Structure"
+            title="Nuxt"
             codeblock="
 //directive folder and file
-src/components/directives/click-ouside.js
+src/plugins/directives/click-ouside.js
 
 //directives global folder and installation
-src/plugins/globalDirectives.js
+plugins/globalDirectives.js
 
 import Vue from 'vue';
-import clickOutside from '../directives/click-ouside.js';
-const GlobalDirectives = {
-  install (Vue) {
-    Vue.directive('click-outside', clickOutside);
-  }
-}
-
-export default GlobalDirectives
-
-
-        "
+import clickOutside from './directives/click-ouside.js';
+Vue.directive('click-outside', clickOutside);
+            "
         />
     </div>
 </template>
