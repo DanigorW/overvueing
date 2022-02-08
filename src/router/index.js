@@ -154,6 +154,18 @@ const routes = [{
         component: () =>
             import ( /* webpackChunkName: "Webpack" */ '../views/Webpack.vue')
     },
+    {
+        path: '/jest',
+        name: 'Jest',
+        component: () =>
+            import ( /* webpackChunkName: "Jest" */ '../views/Jest.vue')
+    },
+    {
+        path: '/firebase',
+        name: 'Firebase',
+        component: () =>
+            import ( /* webpackChunkName: "Firebase" */ '../views/Firebase.vue')
+    },
 
 
     {

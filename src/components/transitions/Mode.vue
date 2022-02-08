@@ -2,18 +2,19 @@
     <div class="container">
         <CodeBlock
             type="code"
-            title="How to use"
+            title="Mode property"
             content="
-you can wrap any HTML element you want to animate in a <transition name='some-class'> tag.
-The transition name is the class you want to add - transition require 4 class to work and the name you provid 
-need's to be prefix to the class (you will see in the example). Animation duration depends on the time you
-provide in you transition, exmaple: all 1s ease-in-out;. If transition not provided you can add duration property on the transition tag.        
-      "
+If you have 2 element that you need to animate or you have an if else block by default vue animate the second element first.
+We want to avoid this behavior, it will make your UI glitch for a sec. To solve this behavior we will use the mode property.
+Mode property have 2 options, out-in or in-out (default). To get the behavior we want we will use out-in to revers the default behavior.
+IMPORTANT NOTE- When animating more than 1 element we need to provid the key attribute like we do in v-for loop.
+"
             codeblock="
 //simple fade in fade out
 
-<transition name='fade'>
-    <h1>fade in/fade out</h1>
+<transition name='fade' mode='out-in'>
+    <h1 v-if='boolVal' key='first'>fade in/fade out</h1>
+    <h2 v-else key='second'>another fade in/fade out</h2>
 </transition>
 
 //any name

@@ -2,17 +2,17 @@
     <div class="container">
         <CodeBlock
             type="code"
-            title="How to use"
+            title="Duration property"
             content="
-you can wrap any HTML element you want to animate in a <transition name='some-class'> tag.
-The transition name is the class you want to add - transition require 4 class to work and the name you provid 
-need's to be prefix to the class (you will see in the example). Animation duration depends on the time you
-provide in you transition, exmaple: all 1s ease-in-out;. If transition not provided you can add duration property on the transition tag.        
+The duration property is only for case you diden't provided a transition time on your css.
+In the example below we are using transition time and duration property just for the
+example. You dont need both, if provided both vue will prioritise the duration property
+        
       "
             codeblock="
 //simple fade in fade out
 
-<transition name='fade'>
+<transition name='fade' duration='1000'>
     <h1>fade in/fade out</h1>
 </transition>
 

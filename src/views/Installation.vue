@@ -1,17 +1,17 @@
 <template>
-  <div class="padding20">
-    <installation />
-  </div>
+    <div class="padding20">
+        <Installation />
+    </div>
 </template>
 
 <script>
 export default {
-  components: {
-    Installation: () =>
-      import(
-        /* webpackChunkName: "Installation" */ "../components/installation/Installation.vue"
-      ),
-  },
+    components: {
+        Installation: () =>
+            import(
+                /* webpackChunkName: "Installation" */ "../components/installation/Installation.vue"
+            ),
+    },
 };
 </script>
 

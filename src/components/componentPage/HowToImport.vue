@@ -9,7 +9,7 @@ export default {
     components: {
         Header : () =>
             import(
-                /* webpackChunkName: 'Header' */ '../compontents/globalReusableComponents/globalHeader/Header.vue'
+                /* webpackChunkName: 'Header' */ '../components/globalReusableComponents/globalHeader/Header.vue'
         ),
     },
 };
