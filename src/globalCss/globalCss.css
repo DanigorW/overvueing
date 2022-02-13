@@ -50,6 +50,8 @@ html {
 .width87 {
     width: calc(100% - 220px);
     transition: all 0.5s;
+    /* margin-right: auto; */
+    /* width: calc(100% - 520px); */
 }
 
 .width100 {

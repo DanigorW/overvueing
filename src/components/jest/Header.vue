@@ -1,12 +1,15 @@
 <template>
     <div class="container">
-        <PageHeader title="Lifecycle hooks with vue" />
+        <PageHeader title="Jest" />
         <CodeBlock
             type="code"
-            title="Lifecycle in general"
-            content="Lifecycle in components is the way to control things that we want to happen before or after 
-      the component is rendered to the dom. Most of the times, if you need to fetch data from any backend api on page load 
-      you will use lifecycle hook to do so.
+            title="Jest in a nut shell"
+            content="It's common practice to use some test librarie on your project. One of the most popular librarie is jest (developed by facebook).
+            Before pushing code to production we need to run all the tests that we written and to check that everything is passing.
+            It prevents a lot of headique and debugging time even if some time it's seem like an overkill.
+            In big projects it's standard this day's. 
+            Think of a big team of developers and someone asked to change some logic in one of your commponent you writen a long time ago, it's so easy to ruin something by mistake.
+            Jest is here to insure that everything is working how it's supposed to and flag very fast errors.
             "
         />
     </div>

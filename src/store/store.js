@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import Nav from './modules/nav/Nav'
+import Navbar from './modules/nav/Navbar'
 import PluginsList from './modules/pluginList/PluginsList'
 import InstallationList from './modules/installationList/InstallationList'
 import Firebase from './modules/firebase/Firebase'
@@ -12,7 +12,7 @@ export default new Vuex.Store({
     mutations: {},
     actions: {},
     modules: {
-        Nav,
+        Navbar,
         PluginsList,
         InstallationList,
         Firebase
