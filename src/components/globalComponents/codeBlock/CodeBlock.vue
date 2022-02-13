@@ -1,5 +1,5 @@
 <template>
-    <div id="block-code">
+    <div :style="{ background: bg }" id="block-code">
         <div v-if="type == 'normal'">
             <p class="title" v-if="title">{{ title }}</p>
             <p class="installation" v-if="installation">{{ installation }}</p>
@@ -29,6 +29,7 @@ export default {
         "npm",
         "use",
         "content",
+        "bg",
     ],
 };
 </script>
