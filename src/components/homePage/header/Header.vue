@@ -1,7 +1,17 @@
 <template>
     <div class="container">
+        <PageHeader title="In progress" />
+        <CodeBlock type="code" title="Slots" />
+        <CodeBlock type="code" title="Webpack" />
+        <CodeBlock type="code" title="Seo" />
+        <CodeBlock type="code" title="Sitemaps" />
+        <CodeBlock type="code" title="Algos" />
+        <CodeBlock type="code" title="Vanilla js" />
         <PageHeader title="What's coming next" />
+        <CodeBlock type="code" title="Navigation in sections" />
+        <CodeBlock type="code" title="More code examples and case uses" />
         <CodeBlock type="code" title="Vue v3" />
+        <CodeBlock type="code" title="Jest for vue v3" />
         <CodeBlock type="code" title="TypeScript" />
         <CodeBlock type="code" title="Docker" />
         <PageHeader title="Bug fixes" />

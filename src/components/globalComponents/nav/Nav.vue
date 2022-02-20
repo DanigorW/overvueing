@@ -3,7 +3,11 @@
         <div class="container">
             <div class="nav-container">
                 <div class="logo">
-                    <h3>OVER<span class="vue-color-green">VUE</span>ING</h3>
+                    <router-link to="/"
+                        ><h3>
+                            OVER<span class="vue-color-green">VUE</span>ING
+                        </h3></router-link
+                    >
                 </div>
 
                 <div
@@ -39,9 +43,7 @@ export default {
     methods: {
         ...mapMutations(["SET_IS_SIDE_BAR_OPEN"]),
         changeIconHover() {
-            setTimeout(() => {
-                this.iconHover = false;
-            }, 1000);
+            this.iconHover = false;
         },
     },
 };

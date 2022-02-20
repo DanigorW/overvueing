@@ -1,7 +1,9 @@
 <template>
     <div :style="{ background: bg }" id="block-code">
         <div v-if="type == 'normal'">
-            <p class="title" v-if="title">{{ title }}</p>
+            <p class="title" v-if="title">
+                {{ title }}
+            </p>
             <p class="installation" v-if="installation">{{ installation }}</p>
             <p class="npm" v-if="npm">{{ npm }}</p>
             <p class="use" v-if="use">{{ use }}</p>

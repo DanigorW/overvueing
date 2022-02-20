@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import Navbar from './modules/nav/Navbar'
+import Navbar from './modules/navbar/Navbar'
 import PluginsList from './modules/pluginList/PluginsList'
 import InstallationList from './modules/installationList/InstallationList'
 import Firebase from './modules/firebase/Firebase'
