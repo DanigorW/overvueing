@@ -3,16 +3,18 @@ export default {
         isSidebarOpen: true,
         routes: ['Home', 'Installation', 'Components', 'Computed', 'Lifecycle', 'Props',
             'Watchers', 'Routes', 'State', 'Mixins', 'Filters', 'Directives',
-            'Fetch', 'Forms', 'Attr', 'Slots', 'Transition', 'Jest', 'Firebase', 'Webpack', 'Seo', 'Sitemap',
-            'Algos', 'Vanilla js', 'Regex', 'Plugins'
-        ]
+            'Fetch', 'Forms', 'Refs', 'Transition', 'Jest', 'Firebase', 'Webpack', 'Regex', 'Plugins'
+        ],
     },
     mutations: {
         SET_IS_SIDE_BAR_OPEN(state) {
             state.isSidebarOpen = !state.isSidebarOpen;
-        }
+        },
+
     },
-    actions: {},
+    actions: {
+
+    },
     getters: {
         IS_SIDE_BAR_OPEN(state) {
             return state.isSidebarOpen;
@@ -20,6 +22,6 @@ export default {
 
         GET_ALL_ROUTES(state) {
             return state.routes;
-        }
+        },
     }
 }

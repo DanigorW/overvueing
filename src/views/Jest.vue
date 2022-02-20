@@ -11,6 +11,11 @@
         <BeforeStarting />
         <FindComponent />
         <ToBeTruthy />
+        <SetData />
+        <State />
+        <StateReal />
+        <StateMock />
+        <!-- <Docks /> -->
     </div>
 </template>
 
@@ -61,6 +66,26 @@ export default {
             import(
                 /* webpackChunkName: "ToBeTruthy" */ "../components/jest/ToBeTruthy.vue"
             ),
+        SetData: () =>
+            import(
+                /* webpackChunkName: "SetData" */ "../components/jest/SetData.vue"
+            ),
+        State: () =>
+            import(
+                /* webpackChunkName: "State" */ "../components/jest/State.vue"
+            ),
+        StateReal: () =>
+            import(
+                /* webpackChunkName: "StateReal" */ "../components/jest/StateReal.vue"
+            ),
+        StateMock: () =>
+            import(
+                /* webpackChunkName: "StateMock" */ "../components/jest/StateMock.vue"
+            ),
+        // Docks: () =>
+        //     import(
+        //         /* webpackChunkName: "Docks" */ "../components/jest/Docks.vue"
+        //     ),
     },
 };
 </script>

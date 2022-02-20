@@ -107,10 +107,10 @@ const routes = [{
             import ( /* webpackChunkName: "Transition" */ '../views/Transition.vue')
     },
     {
-        path: '/attr',
-        name: 'Attr',
+        path: '/refs',
+        name: 'Refs',
         component: () =>
-            import ( /* webpackChunkName: "Attr" */ '../views/Attr.vue')
+            import ( /* webpackChunkName: "Refs" */ '../views/Refs.vue')
     },
     {
         path: '/slots',
@@ -142,12 +142,7 @@ const routes = [{
         component: () =>
             import ( /* webpackChunkName: "Seo" */ '../views/Seo.vue')
     },
-    {
-        path: '/sitemap',
-        name: 'Sitemap',
-        component: () =>
-            import ( /* webpackChunkName: "Sitemap" */ '../views/Sitemap.vue')
-    },
+
     {
         path: '/webpack',
         name: 'Webpack',
