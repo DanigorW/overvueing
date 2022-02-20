@@ -4,11 +4,10 @@
             <CodeBlock
                 type="code"
                 title="Normal"
-                codeblock="
-<template>
+                codeblock="<template>
      <header id='main-header' class='bg-grey'>
         <div class='container'>
-          <h3>I'M A TITLE</h3>
+          <h3>TITLE</h3>
         </div>
     </header>
 </template>  
@@ -23,8 +22,7 @@
             <CodeBlock
                 type="code"
                 title="With props"
-                codeblock="
-<template>
+                codeblock="<template>
      <header :class='type === 'normal' ? 'bg-grey' : 'bg-red'' id='main-header'>
         <div class='container'>
           <h3>{{}}</h3> <- title prop
@@ -33,10 +31,8 @@
 </template>  
 
 export default {
-    
-    <!-- NOTE it's not possible to use required
-     and default in the same time, only one can be added -->
-    
+    //NOTE it's not possible to use required
+    //and default in the same time, only one can be added
     props: {
         type:{
           default:'normal'

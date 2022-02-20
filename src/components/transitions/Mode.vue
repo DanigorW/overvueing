@@ -9,9 +9,7 @@ We want to avoid this behavior, it will make your UI glitch for a sec. To solve 
 Mode property have 2 options, out-in or in-out (default). To get the behavior we want we will use out-in to revers the default behavior.
 IMPORTANT NOTE- When animating more than 1 element we need to provid the key attribute like we do in v-for loop.
 "
-            codeblock="
-//simple fade in fade out
-
+            codeblock="//simple fade in fade out
 <transition name='fade' mode='out-in'>
     <h1 v-if='boolVal' key='first'>fade in/fade out</h1>
     <h2 v-else key='second'>another fade in/fade out</h2>
@@ -38,8 +36,7 @@ IMPORTANT NOTE- When animating more than 1 element we need to provid the key att
 .[any name]-enter, .[any name]-leave-to {
   do somting
 }    
-</style>
-      "
+</style>"
         />
     </div>
 </template>

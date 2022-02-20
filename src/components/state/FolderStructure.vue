@@ -4,41 +4,35 @@
             <CodeBlock
                 type="code"
                 title="Default"
-                codeblock="
--public (folder)
--src (folder)
---assets (sub folder)
---compontents (sub folder)
---router (sub folder)
---store (sub folder)
----store.js (sub folder file)
---views (sub folder)
-app.vue (file)
-main.js (file)
-"
+                codeblock="-src
+--assets
+--compontents
+--router
+--store
+---store.js
+--views
+app.vue
+main.js"
             />
             <CodeBlock
                 type="code"
                 title="Modules"
-                codeblock="
--public (folder)
--src (folder)  
---assets (sub folder)
---compontents (sub folder)
---router (sub folder)
---store (sub folder)
-----modules (sub sub folder)
------user (sub sub sub folder)
-------user.js (sub sub sub file)
------login (sub sub sub folder)
-------login.js (sub sub sub file)
------logout (sub sub sub folder)
-------logout.js (sub sub sub file)
----store.js (sub folder file)
---views (sub folder)
-app.vue (file)
-main.js (file)
-            "
+                codeblock="-src  
+--assets
+--compontents
+--router
+--store
+----modules
+-----user
+------user.js
+-----login
+------login.js
+-----logout
+------logout.js
+---store.js
+--views
+app.vue
+main.js     "
             />
         </div>
     </div>

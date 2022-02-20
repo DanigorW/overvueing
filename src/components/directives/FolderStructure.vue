@@ -3,8 +3,7 @@
         <CodeBlock
             type="code"
             title="Folder Structure"
-            codeblock="
-//directive folder and file
+            codeblock="//directive folder and file
 src/components/directives/click-ouside.js
 
 //directives global folder and installation
@@ -18,10 +17,7 @@ const GlobalDirectives = {
   }
 }
 
-export default GlobalDirectives
-
-
-        "
+export default GlobalDirectives"
         />
     </div>
 </template>

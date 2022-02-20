@@ -6,17 +6,12 @@
             content="
      Define a filter globally before creating the Vue instance:
             "
-            codeblock="
-src/main.js
-
+            codeblock="src/main.js
 Vue.filter('capitalize', (value) => {
   if (!value) return ''
   value = value.toString()
   return value.charAt(0).toUpperCase() + value.slice(1)
-})
-
-        
-            "
+})"
         />
     </div>
 </template>

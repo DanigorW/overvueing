@@ -13,12 +13,10 @@
             The content is visible on the page only if prop set to true, by default the prop valus is false.
             The props name must be exact like the original props names.
             "
-            codeblock="
-import { shallowMount } from '@vue/test-utils'
+            codeblock="import { shallowMount } from '@vue/test-utils'
 import yourComponent from '@/components/../yourComponent.vue'
 
 describe('yourComponent.vue', () => {
-
     it(`your test description`, () => {
         const wrapper = shallowMount(yourComponent, {
             propsData: {
@@ -26,10 +24,8 @@ describe('yourComponent.vue', () => {
             }
         })
         expect(wrapper.get('.content').exists()).toBeTruthy()
-
     })
-})
-            "
+})"
         />
     </div>
 </template>

@@ -7,9 +7,7 @@
             content="
         
       "
-            codeblock="
-src/components/[any component that need form]
-
+            codeblock="src/components/[any component that need form]
 <template>
     <div class='form'>
         <form @submit.prevent novalidate>
@@ -171,8 +169,7 @@ form {
   }
 }
 
-</style>
-            "
+</style>"
         />
     </div>
 </template>

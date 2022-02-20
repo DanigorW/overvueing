@@ -5,8 +5,7 @@
                 type="code"
                 title="Add document"
                 content="To add a document all you need to do is just use the add() function. If you don't have a collection and you adding one via code firebase will automatically create the collection for you."
-                codeblock="
-import { db } from '../../../firebase/config'
+                codeblock="import { db } from '../../../firebase/config'
 import { collection, getDocs , addDoc } from 'firebase/firestore'
 
 export default {
@@ -51,8 +50,7 @@ export default {
             return state.users;
         }
     }
-}
-                "
+}"
             />
         </div>
     </div>

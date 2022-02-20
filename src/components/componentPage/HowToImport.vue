@@ -4,8 +4,7 @@
             <CodeBlock
                 type="code"
                 title="How to import"
-                codeblock="
-export default {
+                codeblock="export default {
     components: {
         Header : () =>
             import(
@@ -13,8 +12,7 @@ export default {
         ),
     },
 };
-</script>                
-            "
+</script>"
             />
         </div>
     </div>

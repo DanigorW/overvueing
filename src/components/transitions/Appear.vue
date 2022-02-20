@@ -6,9 +6,7 @@
             content="
         If you want the animation to fire on page load you can add the appear property.
 "
-            codeblock="
-//simple zoom in zoom out 
-
+            codeblock="//simple zoom in zoom out 
 <transition name='zoom' mode='out-in' type='animation' appear>
     <h1 v-if='boolVal' key='first'>fade in/fade out</h1>
     <h2 v-else key='second'>another fade in/fade out</h2>
@@ -43,8 +41,7 @@
     transform: scale(0,0)
   }
 }
-</style>
-      "
+</style>"
         />
     </div>
 </template>

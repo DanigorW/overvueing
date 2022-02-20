@@ -4,23 +4,18 @@
             <CodeBlock
                 type="code"
                 title="Array"
-                codeblock="
-<script>
+                codeblock="<script>
 export default {
     props: ['title', 'content'],
 };
-</script>
-            "
+</script>"
             />
             <CodeBlock
                 type="code"
                 title="Object"
-                codeblock="
-export default {
-    
-    <!-- NOTE it's not possible to use required
-     and default in the same time only one can be added -->
-    
+                codeblock="export default {
+    //NOTE it's not possible to use required
+    //and default in the same time only one can be added
     props: {
         title: {
             type: String,

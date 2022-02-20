@@ -11,19 +11,16 @@
             If you know for 100% that your class/id  exist on the template use get insted.
             get get's the element immediately and run faster.
             "
-            codeblock="
-import { shallowMount } from '@vue/test-utils'
+            codeblock="import { shallowMount } from '@vue/test-utils'
 import yourComponent from '@/components/../yourComponent.vue'
 
 describe('yourComponent.vue', () => {
-
     it(`your test description`, () => {
         const wrapper = shallowMount(yourComponent, {
             propsData: {
                 isVisible: true,
             }
         })
-
         //use
         expect(wrapper.get('.content').exists()).toBeTruthy()
         expect(wrapper.findComponent('.content').exists()).toBeTruthy()
@@ -32,9 +29,7 @@ describe('yourComponent.vue', () => {
         expect(wrapper.find('.content').exists()).toBeTruthy()
 
     })
-})
-           
-            "
+})  "
         />
     </div>
 </template>

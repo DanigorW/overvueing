@@ -5,12 +5,9 @@
             title="Local"
             content="
       You can define local directive in any component option."
-            codeblock="
-./src/components/[component]
-
+            codeblock="./src/components/[component]
 <script>
-
-directives: {
+ directives: {
     background: {
         bind(el, binding,vnode) {
             // Allow users to customise the color by passing an expression.
@@ -28,8 +25,7 @@ directives: {
     } 
  }
 }
-</script>          
-            "
+</script>                     "
         />
     </div>
 </template>

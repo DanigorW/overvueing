@@ -1,11 +1,10 @@
 <template>
-  <div>
-    <div class="container">
-      <CodeBlock
-        type="code"
-        title="Components options"
-        codeblock="
-<template>
+    <div>
+        <div class="container">
+            <CodeBlock
+                type="code"
+                title="Components options"
+                codeblock="<template>
     <div>
     <!-- some html -->
     </div>
@@ -25,7 +24,7 @@
     watch: {},
     components: {},
 
-    //lifecycle
+    //lifecycles
     beforeCreate() {},
     created() {},
     beforeMount() {},
@@ -33,25 +32,20 @@
     beforeUpdate() {},
     updated() {},
     };
-</script>
-
-<style>
-
-</style>
-      "
-      />
+</script>"
+            />
+        </div>
     </div>
-  </div>
 </template>
 
 <script>
 export default {
-  components: {
-    CodeBlock: () =>
-      import(
-        /* webpackChunkName: "CodeBlock" */ "../globalComponents/codeBlock/CodeBlock.vue"
-      ),
-  },
+    components: {
+        CodeBlock: () =>
+            import(
+                /* webpackChunkName: "CodeBlock" */ "../globalComponents/codeBlock/CodeBlock.vue"
+            ),
+    },
 };
 </script>
 

@@ -6,9 +6,7 @@
             content="
  To sync between css animations and css transitions we can add another type property that can accept transition or animation value.
 "
-            codeblock="
-//simple zoom in zoom out 
-
+            codeblock="//simple zoom in zoom out 
 <transition name='zoom' mode='out-in'>
     <h1 v-if='boolVal' key='first'>fade in/fade out</h1>
     <h2 v-else key='second'>another fade in/fade out</h2>
@@ -41,8 +39,7 @@
     transform: scale(0,0)
   }
 }
-</style>
-      "
+</style>"
         />
     </div>
 </template>

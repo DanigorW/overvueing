@@ -1,17 +1,16 @@
 <template>
-  <div class="container">
-    <CodeBlock
-      type="code"
-      title="How to use"
-      content="
+    <div class="container">
+        <CodeBlock
+            type="code"
+            title="How to use"
+            content="
         Let's assume you fetched data on create lifecycle hook and updated users array on your state.
         To use the data we will need to use getter in any component you need the user array.
         To show the data we will use v-for and create an html template that contains the data. 
         Most of the time we will need input that can filter the data and this is the best example of the use
         of computed properties
             "
-      codeblock="
-<template>
+            codeblock="<template>
   <div>
     <input type='text' v-model.trim='userInputValue' />
     <ul>
@@ -42,21 +41,20 @@ export default {
     },
   },
 }
-</script>
-            "
-    />
-  </div>
+</script>"
+        />
+    </div>
 </template>
 
 <script>
 export default {
-  beforeCreate() {},
-  components: {
-    CodeBlock: () =>
-      import(
-        /* webpackChunkName: "CodeBlock" */ "../globalComponents/codeBlock/CodeBlock.vue"
-      ),
-  },
+    beforeCreate() {},
+    components: {
+        CodeBlock: () =>
+            import(
+                /* webpackChunkName: "CodeBlock" */ "../globalComponents/codeBlock/CodeBlock.vue"
+            ),
+    },
 };
 </script>
 

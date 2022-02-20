@@ -6,8 +6,7 @@
             content="
 
             "
-            codeblock="
-async const SendData = (data) => {
+            codeblock="async const SendData = (data) => {
   try {
     const config = {
         method: 'POST',
@@ -27,8 +26,7 @@ async const SendData = (data) => {
 } catch (error) {
     alert(error)
  }
-}            
-            "
+}            "
         />
     </div>
 </template>

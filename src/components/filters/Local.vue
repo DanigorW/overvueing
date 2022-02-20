@@ -6,9 +6,7 @@
             content="
       You can define local filters in a component’s options:
             "
-            codeblock="
-<script>
-
+            codeblock="<script>
 filters: {
    capitalize (value) {
    if (!value) return '';
@@ -17,8 +15,7 @@ filters: {
   },
  }
 
-</script>          
-            "
+</script>          "
         />
     </div>
 </template>

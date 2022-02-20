@@ -3,9 +3,7 @@
         <CodeBlock
             type="code"
             title="How to use"
-            codeblock="
-
-<template>
+            codeblock="<template>
     <div>
        your text value | capitalize
        { name | capitalize } <- NOTE - it needs to be in double curly brackets!
@@ -22,8 +20,7 @@ export default {
   },
  }
 };
-</script>
-            "
+</script>"
         />
     </div>
 </template>

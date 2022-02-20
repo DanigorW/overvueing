@@ -8,8 +8,7 @@ This example is for actions, getters and mutations work the same.
 We don’t care what the actions do, or what the store looks like. We just need to know that actions are being fired when they should, and that they are fired with the expected value.
 To test this, we need to pass a mock store to Vue when we shallowMount our component.            
 "
-            codeblock="
-import { shallowMount, createLocalVue } from '@vue/test-utils'
+            codeblock="import { shallowMount, createLocalVue } from '@vue/test-utils'
 import Vuex from 'vuex'
 import Navbar from '@/components/reusableComponents/navbar/Navbar'
 
@@ -35,8 +34,7 @@ describe('Actions.vue', () => {
     wrapper.get('.nav-icon').trigger('click')
     expect(actions.SET_IS_SIDE_BAR_OPEN).toHaveBeenCalled()
   })
-})
-            "
+})"
         />
     </div>
 </template>

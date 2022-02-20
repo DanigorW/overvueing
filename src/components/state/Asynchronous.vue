@@ -1,23 +1,22 @@
 <template>
-  <div>
-    <div class="container">
-      <div class="mt-40">
-        <CodeBlock
-          type="code"
-          contentTitle="Default"
-          title="Asynchronous vs synchronous"
-          content="In some point you will have to fetch some data from any backend api and store the data in your state and use it in 
+    <div>
+        <div class="container">
+            <div class="mt-40">
+                <CodeBlock
+                    type="code"
+                    contentTitle="Default"
+                    title="Asynchronous vs synchronous"
+                    content="In some point you will have to fetch some data from any backend api and store the data in your state and use it in 
           your app. In Vue world you have to do it in the right way, for that you have mutations & actions, mutations is for updating the state with synchronous logic only, actions is for asynchronous code that runs in the background and then commits mutations that update the state.
           "
-          codeblock="
-export default {
+                    codeblock="export default {
    state: {
        counter:0,
        users:[]
    },
    mutations: {
        INCREMENT_COUNTER(state){
-           <!-- synchronous code that updates the counter -->
+           //synchronous code that updates the counter
            state.counter++
        },
 
@@ -26,7 +25,7 @@ export default {
        } 
    },
    actions: {
-          <!-- asynchronous code that updates the users array with mutations  -->
+        //asynchronous code that updates the users array with mutations
         FETCH_USERS({commit}){
             fetch logic....
             commit('UPDATE_USERS',data)       
@@ -34,28 +33,27 @@ export default {
    },
    getters: {
        [SOME_GETTER](state){
-           
+      
        }
    }
-}
-"
-        />
-      </div>
+}"
+                />
+            </div>
+        </div>
     </div>
-  </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {};
-  },
-  components: {
-    CodeBlock: () =>
-      import(
-        /* webpackChunkName: "CodeBlock" */ "../globalComponents/codeBlock/CodeBlock.vue"
-      ),
-  },
+    data() {
+        return {};
+    },
+    components: {
+        CodeBlock: () =>
+            import(
+                /* webpackChunkName: "CodeBlock" */ "../globalComponents/codeBlock/CodeBlock.vue"
+            ),
+    },
 };
 </script>
 

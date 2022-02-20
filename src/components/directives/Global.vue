@@ -6,9 +6,7 @@
             content="
       You can define global directives that can be used in any component. 
             "
-            codeblock="
-src/main.js
-
+            codeblock="src/main.js
 Vue.directives('background', {
        bind(el, binding,vnode) {
        // Allow users to customise the color by passing an expression.
@@ -24,8 +22,7 @@ Vue.directives('background', {
     },
    },
   } 
-})
-"
+})"
         />
     </div>
 </template>

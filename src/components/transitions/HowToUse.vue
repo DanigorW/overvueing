@@ -9,9 +9,7 @@ The transition name is the class you want to add - transition require 4 class to
 need's to be prefix to the class (you will see in the example). Animation duration depends on the time you
 provide in you transition, exmaple: all 1s ease-in-out;. If transition not provided you can add duration property on the transition tag.        
       "
-            codeblock="
-//simple fade in fade out
-
+            codeblock="//simple fade in fade out
 <transition name='fade'>
     <h1>fade in/fade out</h1>
 </transition>
@@ -37,8 +35,7 @@ provide in you transition, exmaple: all 1s ease-in-out;. If transition not provi
 .[any name]-enter, .[any name]-leave-to {
   do somting
 }    
-</style>
-      "
+</style>"
         />
     </div>
 </template>

@@ -50,6 +50,9 @@ export default {
 </script>
 
 <style scoped>
+.logo h3 {
+    color: #32475b;
+}
 #nav {
     padding: 20px;
     background: #fff;

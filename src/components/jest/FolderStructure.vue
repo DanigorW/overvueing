@@ -7,9 +7,7 @@
             It's dosen't matter to much, BUT all your tests must be in a folders named tests/unit on the root level.
             I personally structure the folders inside unit folder like modules in state.              
             "
-            codeblock="
-tests/unit root level
-
+            codeblock="tests/unit root level
 tests/unit/reusableComponents <- folder name
     codeBlock <- sub folder
         functions <- sub sub folder
@@ -18,9 +16,7 @@ tests/unit/reusableComponents <- folder name
     navbar <- sub folder
         functions <- sub sub folder
         state <- sub sub folder
-        
-        etc...
-            "
+        etc..."
         />
     </div>
 </template>
