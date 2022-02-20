@@ -5,8 +5,7 @@
                 type="code"
                 title="Update document"
                 content="To update a document you will need the id of the document you want to update."
-                codeblock="
-import { db } from '../../../firebase/config'
+                codeblock="import { db } from '../../../firebase/config'
 import { collection, getDocs , addDoc, doc, deleteDoc, updateDoc } from 'firebase/firestore'
 
 export default {
@@ -75,8 +74,7 @@ export default {
             return state.users;
         }
     }
-}
-                "
+}"
             />
         </div>
     </div>

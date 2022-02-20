@@ -5,8 +5,7 @@
                 type="code"
                 title="Fetching singel document"
                 content="To fetch a singel document you need to know the id of the document. Firebase generate doc id automatically if you don't provide id."
-                codeblock="
-import { db } from '../../../firebase/config'
+                codeblock="import { db } from '../../../firebase/config'
 
 export default {
     state: {
@@ -61,8 +60,7 @@ export default {
             return state.user;
         }
     }
-}
-                "
+}"
             />
         </div>
     </div>

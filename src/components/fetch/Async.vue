@@ -6,8 +6,7 @@
             content="
 
             "
-            codeblock="
-async const fetchData = (url) => {
+            codeblock="async const fetchData = (url) => {
     try {
       const response = await fetch(url);
       const data = await response.json();
@@ -17,8 +16,7 @@ async const fetchData = (url) => {
         alert(error)
     }
  
-}
-            "
+}"
         />
     </div>
 </template>

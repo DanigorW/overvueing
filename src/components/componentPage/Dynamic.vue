@@ -1,11 +1,10 @@
 <template>
-  <div>
-    <div class="container">
-      <CodeBlock
-        type="code"
-        title="Dynamic components "
-        codeblock="
-<template>
+    <div>
+        <div class="container">
+            <CodeBlock
+                type="code"
+                title="Dynamic components "
+                codeblock="<template>
   <div>
     <button @click='selectedComponent = 'UserSettings''>Go to user settings</button>
     <button @click='selectedComponent = 'AccountInfo''>Go to account info</button>
@@ -38,24 +37,20 @@ export default {
       ),
   },
 };
-</script>
-
-<style>
-</style>
-      "
-      />
+</script>"
+            />
+        </div>
     </div>
-  </div>
 </template>
 
 <script>
 export default {
-  components: {
-    CodeBlock: () =>
-      import(
-        /* webpackChunkName: "CodeBlock" */ "../globalComponents/codeBlock/CodeBlock.vue"
-      ),
-  },
+    components: {
+        CodeBlock: () =>
+            import(
+                /* webpackChunkName: "CodeBlock" */ "../globalComponents/codeBlock/CodeBlock.vue"
+            ),
+    },
 };
 </script>
 

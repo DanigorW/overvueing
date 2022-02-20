@@ -5,8 +5,7 @@
                 type="code"
                 title="Deleting document"
                 content="To delete a document you will need the id of the document you want to delete. In the example i'm deleting the document by id and also commiting mutation that delete the document from the users array (ui)."
-                codeblock="
-import { db } from '../../../firebase/config'
+                codeblock="import { db } from '../../../firebase/config'
 import { collection, getDocs , addDoc, doc, deleteDoc } from 'firebase/firestore'
 
 export default {
@@ -63,8 +62,7 @@ export default {
             return state.users;
         }
     }
-}
-                "
+}"
             />
         </div>
     </div>

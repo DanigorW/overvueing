@@ -9,8 +9,6 @@ global.fetch = jest.fn(() =>
     })
 );
 
-
-
 it(`test if SET_IS_SIDE_BAR_OPEN mutation
     changes isSidebarOpen to false`, () => {
     const localVue = createLocalVue()
@@ -35,13 +33,4 @@ it(`test if GET_ALL_ROUTES getter
     localVue.use(Vuex)
     const store = new Vuex.Store(cloneDeep(Navbar))
     expect(store.getters.GET_ALL_ROUTES.length).toBeGreaterThan(0)
-})
-
-it(`test if GET_USERS action
-    return array of users`, async() => {
-    const localVue = createLocalVue()
-    localVue.use(Vuex)
-    const store = new Vuex.Store(cloneDeep(Navbar))
-    await store.dispatch('GET_USERS')
-    expect(store.state.users.length).toBeGreaterThan(0)
 })

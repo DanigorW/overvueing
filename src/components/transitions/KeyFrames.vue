@@ -8,9 +8,7 @@
   If needed you can combine transition and css animations.
   If you have more complex animations with different duration times it's possible to add another property called type to sync the animation.
 "
-            codeblock="
-//simple zoom in zoom out 
-
+            codeblock="//simple zoom in zoom out 
 <transition name='zoom' mode='out-in' type='animation'>
     <h1 v-if='boolVal' key='first'>fade in/fade out</h1>
     <h2 v-else key='second'>another fade in/fade out</h2>
@@ -45,8 +43,7 @@
     transform: scale(0,0)
   }
 }
-</style>
-      "
+</style>"
         />
     </div>
 </template>

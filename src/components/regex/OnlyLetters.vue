@@ -6,12 +6,10 @@
             content="
             Automatically accept only letters, user can't type numbers or symbols.
             "
-            codeblock="
-const onlyLetters = (value) => {
+            codeblock="const onlyLetters = (value) => {
     let regex = /^[A-Z]+$/i;
     return regex.test(value);
-};
-        "
+};"
         />
     </div>
 </template>

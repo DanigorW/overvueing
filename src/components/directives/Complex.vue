@@ -6,9 +6,7 @@
             content="
       The classic click outside directive (folder structure in the next section)
             "
-            codeblock="
-src/components/directives/click-ouside.js
-
+            codeblock="src/components/directives/click-ouside.js
 export default {
   bind: function (el, binding, vnode) {
     el.clickOutsideEvent = function (event) {
@@ -24,8 +22,6 @@ export default {
     document.body.removeEventListener('click', el.clickOutsideEvent)
   },
 }
-
-
 
 //how to use (the directive is global and shared with any component that need it)
 <template>
@@ -46,8 +42,7 @@ export default {
       }
     }
 };
-</script>
-"
+</script>"
         />
     </div>
 </template>

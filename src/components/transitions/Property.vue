@@ -9,9 +9,7 @@ In the example below we are using transition time and duration property just for
 example. You dont need both, if provided both vue will prioritise the duration property
         
       "
-            codeblock="
-//simple fade in fade out
-
+            codeblock="//simple fade in fade out
 <transition name='fade' duration='1000'>
     <h1>fade in/fade out</h1>
 </transition>
@@ -37,8 +35,7 @@ example. You dont need both, if provided both vue will prioritise the duration p
 .[any name]-enter, .[any name]-leave-to {
   do somting
 }    
-</style>
-      "
+</style>"
         />
     </div>
 </template>

@@ -1,23 +1,23 @@
 <template>
     <div class="container">
         <PageHeader title="In progress" />
-        <CodeBlock type="code" title="Slots" />
-        <CodeBlock type="code" title="Webpack" />
-        <CodeBlock type="code" title="Seo" />
-        <CodeBlock type="code" title="Sitemaps" />
-        <CodeBlock type="code" title="Algos" />
-        <CodeBlock type="code" title="Vanilla js" />
+        <CodeBlock type="normal" title="Slots" />
+        <CodeBlock type="normal" title="Webpack" />
+        <CodeBlock type="normal" title="Seo" />
+        <CodeBlock type="normal" title="Sitemaps" />
+        <CodeBlock type="normal" title="Algos" />
+        <CodeBlock type="normal" title="Vanilla js" />
         <PageHeader title="What's coming next" />
-        <CodeBlock type="code" title="Navigation in sections" />
-        <CodeBlock type="code" title="More code examples and case uses" />
-        <CodeBlock type="code" title="Vue v3" />
-        <CodeBlock type="code" title="Jest for vue v3" />
-        <CodeBlock type="code" title="TypeScript" />
-        <CodeBlock type="code" title="Docker" />
+        <CodeBlock type="normal" title="Navigation in sections" />
+        <CodeBlock type="normal" title="More code examples and case uses" />
+        <CodeBlock type="normal" title="Vue v3" />
+        <CodeBlock type="normal" title="Jest for vue v3" />
+        <CodeBlock type="normal" title="TypeScript" />
+        <CodeBlock type="normal" title="Docker" />
         <PageHeader title="Bug fixes" />
         <CodeBlock
             bg="#ff3333"
-            type="code"
+            type="normal"
             title="single quotes"
             content="Currently all the code examples are in single quotes.
             If you copy code from snippets your code editor can throw erros.
@@ -28,7 +28,7 @@
         />
         <CodeBlock
             bg="#ff3333"
-            type="code"
+            type="normal"
             title="typos"
             content="YuO Nokw hwo it is... :P"
         />

@@ -5,11 +5,9 @@
             title="On Routes"
             content="
 you can aniamte page transitions as well"
-            codeblock="
-<transition name='fade'>
+            codeblock="<transition name='fade'>
   <router-view/>
-</transition>
-      "
+</transition>"
         />
     </div>
 </template>

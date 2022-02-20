@@ -9,8 +9,7 @@
             This is simple example that changes the background color on load. 
             Usuely we will want to use refs on some form of logic (show/hide loaders etc...)
         "
-            codeblock="
-<template>
+            codeblock="<template>
     <div>
         <h1 ref='test'>header text</h1>
     </div>
@@ -23,8 +22,7 @@ export default {
         h1.style.backgroundColor = '#66bb6a';
     },
 };
-</script>
-            "
+</script>"
         />
     </div>
 </template>

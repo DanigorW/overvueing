@@ -14,8 +14,7 @@ I'll will always go with library approach - it saves a LOT of time and easy to w
 The best library that exist for froms is 'Vue Formulate' - you name it, it can do that!.
 
             "
-            codeblock="
-./src/components/[any component that need form]
+            codeblock="./src/components/[any component that need form]
 //you can add any validators you want
 https://vueformulate.com/guide/validation/
 
@@ -51,8 +50,7 @@ export default {
     }
   }
 }
-</script>
-            "
+</script>"
         />
     </div>
 </template>

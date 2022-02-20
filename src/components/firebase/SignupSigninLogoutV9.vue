@@ -5,8 +5,7 @@
                 type="code"
                 title="Signup Signin Logout"
                 content="It's possible to use firebase authentication service to signup/signin/logout users and track the data. By default when user signsup he automatically receive a JWT if the user is loginout the JWT despire. We can track the status of the token and show content only to loggedin users."
-                codeblock="
-import { db } from '../../../firebase/config'
+                codeblock="import { db } from '../../../firebase/config'
 import { collection, getDocs , addDoc, doc, deleteDoc, updateDoc } from 'firebase/firestore'
 import {
     createUserWithEmailAndPassword,
@@ -126,8 +125,7 @@ export default {
             return state.users;
         }
     }
-}
-                "
+}"
             />
         </div>
     </div>

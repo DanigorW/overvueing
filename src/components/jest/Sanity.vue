@@ -9,14 +9,10 @@
                 If this test passed it means that everything is configured correctly.
                 If not somting went wrong.         
             "
-            codeblock="
-tests\unit\sanity.spec.js
-
+            codeblock="tests\unit\sanity.spec.js
 it('sanity test', () => {
     expect(true).toBe(true)
-})
-           
-            "
+})"
         />
     </div>
 </template>

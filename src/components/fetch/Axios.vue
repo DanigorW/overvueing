@@ -1,13 +1,12 @@
 <template>
-  <div class="container">
-    <CodeBlock
-      type="code"
-      title="Axios"
-      content="
+    <div class="container">
+        <CodeBlock
+            type="code"
+            title="Axios"
+            content="
 
             "
-      codeblock="
-const getData = async () => {
+            codeblock="const getData = async () => {
     try {
       const data = await axios.get('https://jsonplaceholder.typicode.com/todos/1');
       const {title} = data.data
@@ -16,21 +15,20 @@ const getData = async () => {
     } catch (error) {
         console.log(error);
     }
-}
-            "
-    />
-  </div>
+}            "
+        />
+    </div>
 </template>
 
 <script>
 export default {
-  beforeCreate() {},
-  components: {
-    CodeBlock: () =>
-      import(
-        /* webpackChunkName: "CodeBlock" */ "../globalComponents/codeBlock/CodeBlock.vue"
-      ),
-  },
+    beforeCreate() {},
+    components: {
+        CodeBlock: () =>
+            import(
+                /* webpackChunkName: "CodeBlock" */ "../globalComponents/codeBlock/CodeBlock.vue"
+            ),
+    },
 };
 </script>
 

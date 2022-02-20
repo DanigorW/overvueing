@@ -5,8 +5,7 @@
                 type="code"
                 title="Sort documents"
                 content="Firebase provides an sort function (in this example it's by 'created'), It's very easy to use and saves time."
-                codeblock="
-import { db } from '../../../firebase/config'
+                codeblock="import { db } from '../../../firebase/config'
 
 export default {
     state: {
@@ -75,8 +74,7 @@ export default {
             return state.user;
         }
     }
-}
-                "
+}"
             />
         </div>
     </div>

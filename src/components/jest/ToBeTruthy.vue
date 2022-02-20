@@ -13,12 +13,10 @@
            toContain check if the text provided is in the tamplate.
 
             "
-            codeblock="
-import { shallowMount } from '@vue/test-utils'
+            codeblock="import { shallowMount } from '@vue/test-utils'
 import yourComponent from '@/components/../yourComponent.vue'
 
 describe('yourComponent.vue', () => {
-
     it(`your test description`, () => {
         const wrapper = shallowMount(yourComponent, {
             propsData: {
@@ -35,9 +33,7 @@ describe('yourComponent.vue', () => {
         expect(wrapper.text()).toBe('hey there')
         expect(wrapper.text()).toContain('hey there')
     })
-})
-           
-            "
+})"
         />
     </div>
 </template>

@@ -3,13 +3,11 @@
         <CodeBlock
             type="code"
             title="How to use"
-            codeblock="
-//defult option without expression            
+            codeblock="//defult option without expression            
 <p v-background>Baby blue looks good on me.</p>
 
 //option with expression
-<p v-background='green'>I prefer neon green.</p>
-"
+<p v-background='green'>I prefer neon green.</p>"
         />
     </div>
 </template>

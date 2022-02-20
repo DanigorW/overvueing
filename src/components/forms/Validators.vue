@@ -5,9 +5,7 @@
             type="code"
             title="Validators file"
             content="All your form logic for validations are in this file"
-            codeblock="
-src/util/validators.js
-
+            codeblock="src/util/validators.js
 const VALIDATOR_TYPE_REQUIRE = 'REQUIRE';
 const VALIDATOR_TYPE_MINLENGTH = 'MINLENGTH';
 const VALIDATOR_TYPE_EMAIL = 'EMAIL';
@@ -18,7 +16,6 @@ export const VALIDATOR_MINLENGTH = val => ({
   val: val
 });
 export const VALIDATOR_EMAIL = () => ({ type: VALIDATOR_TYPE_EMAIL });
-
 export const validate = (value, validators) => {
   let isValid = true;
 
@@ -35,8 +32,7 @@ export const validate = (value, validators) => {
   }
   
   return isValid;
-};
-            "
+};"
         />
     </div>
 </template>

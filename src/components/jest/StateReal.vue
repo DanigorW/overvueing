@@ -12,8 +12,7 @@ usually actions in your state have some async code that fetch data and then comm
 There for we need to create a mock version of fetch on the global object that returns promise. The mock version will replace your real fetch.
 Testing the real fetch call is considered bad practice and can fail your tests if the api is down and takes more time.
 "
-            codeblock="
-import Navbar from '@/store/modules/navbar/Navbar'
+            codeblock="import Navbar from '@/store/modules/navbar/Navbar'
 import { createLocalVue } from '@vue/test-utils'
 import Vuex from 'vuex'
 import { cloneDeep } from 'lodash'
@@ -57,8 +56,7 @@ it(`test if GET_ALL_ROUTES getter
     localVue.use(Vuex)
     const store = new Vuex.Store(cloneDeep(Navbar))
     expect(store.getters.GET_ALL_ROUTES.length).toBeGreaterThan(0)
-})
-            "
+})"
         />
     </div>
 </template>

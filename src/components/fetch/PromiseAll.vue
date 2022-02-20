@@ -1,14 +1,12 @@
 <template>
-  <div class="container">
-    <CodeBlock
-      type="code"
-      title="Promise all"
-      content="
+    <div class="container">
+        <CodeBlock
+            type="code"
+            title="Promise all"
+            content="
            The Promise.all() method takes an iterable of promises as an input, and returns a single Promise that resolves to an array of the results of the input promises. This returned promise will resolve when all of the input's promises have resolved, or if the input iterable contains no promises. It rejects immediately upon any of the input promises rejecting or non-promises throwing an error, and will reject with this first rejection message / error.
             "
-      codeblock="
-src/store/modules/users.js
-
+            codeblock="src/store/modules/users.js
 export default {
     state: {
         people: [],
@@ -18,7 +16,7 @@ export default {
         starships: [],
         vehicles: [],,
     },
-    
+
     mutations: {
         SET_PEOPLE(state, payload) {
             state.people = payload
@@ -54,12 +52,11 @@ export default {
                     return Promise.all(values.map(res => res.json()))
             })
             .then(data => {
-                    <!-- i used multiple mutations to update the data in the most simple way
-                         to avoid complex data structure, it's possible to use only one commit
-                         to update all the data we need but the data structure will be hard to 
-                         work with and very complex.
-                      -->
-
+                    //i used multiple mutations to update the data in the most simple way
+                    //to avoid complex data structure, it's possible to use only one commit
+                    //to update all the data we need but the data structure will be hard to 
+                    //work with and very complex.
+                      
                     commit('SET_PEOPLE',data[0])
                     commit('SET_FILMS',data[1])
                     commit('SET_PLANETS',data[2])
@@ -70,23 +67,20 @@ export default {
             .catch(error => alert(error))
     }, 
     },
-    getters: {
-       
-    },
-}     
-            "
-    />
-  </div>
+   
+}  "
+        />
+    </div>
 </template>
 
 <script>
 export default {
-  components: {
-    CodeBlock: () =>
-      import(
-        /* webpackChunkName: "CodeBlock" */ "../globalComponents/codeBlock/CodeBlock.vue"
-      ),
-  },
+    components: {
+        CodeBlock: () =>
+            import(
+                /* webpackChunkName: "CodeBlock" */ "../globalComponents/codeBlock/CodeBlock.vue"
+            ),
+    },
 };
 </script>
 

@@ -6,12 +6,10 @@
             content="Same as numbers above, here we want to test if ths user input has any special symbols.
             In most cases you will want to combine numbers and symbols.
             "
-            codeblock="
-const hasSymbole = (value) => {
+            codeblock="const hasSymbole = (value) => {
     let regex = /[ `!@#$%^&*()_+\-=\[\]{};':'\\|,.<>\/?~]/;
     return regex.test(value);
-};
-        "
+};    "
         />
     </div>
 </template>

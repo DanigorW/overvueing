@@ -11,8 +11,7 @@
 Every function receive an el argument and enter and leave functions receives another argument called done.
 To make every thing work we will use the Web Animations API (fairly new DOM api, nor related to vue).
 "
-            codeblock="
-//simple zoom in zoom out 
+            codeblock="//simple zoom in zoom out 
 // the css bindings = to false is talling vue that the animation is only using js
 // by default vue checks if there are animations via css and it's time consuming.
 // by providing the css set to false is saves time.
@@ -73,9 +72,7 @@ export default {
         }
     }
 };
-</script>
-
-      "
+</script>"
         />
     </div>
 </template>

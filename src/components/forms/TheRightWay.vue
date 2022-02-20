@@ -7,10 +7,8 @@
             content="The right approach is to create a global component 'ControlInput' and to add the option to control the input filed via props.
       This way you can control any input and create as many form's you need in easy way.
       "
-            codeblock=" 
-src/components/globalComponents/InputFiled.vue   
+            codeblock=" src/components/globalComponents/InputFiled.vue   
 //behind the scenes :value='value' is contenct to the v-model
-
 <template>
     <div class='input-control'>
         <input
@@ -40,7 +38,6 @@ src/components/globalComponents/InputFiled.vue
         </transition>
     </div>
 </template>
-
 
 <script>
 export default {
@@ -152,8 +149,7 @@ textarea {
     width: 250px;
   }
 }
-</style>
-            "
+</style>            "
         />
     </div>
 </template>

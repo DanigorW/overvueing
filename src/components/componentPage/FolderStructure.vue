@@ -7,12 +7,12 @@
                 codeblock="
 
 --compontents
----homePage (sub sub folder)
-----Header (sub sub sub folder)
-----Header.vue (sub sub sub file) <- compontents/homePage/Header.vue
----globalReusableComponents (sub sub folder) 
-----globalHeader (sub sub sub folder) 
------Header.vue (sub sub sub sub file) <- compontents/globalComponents/globalHeader/Header.vue
+---homePage
+----Header
+-----Header.vue <- compontents/homePage/header/Header.vue
+---globalReusableComponents 
+----globalHeader 
+-----Header.vue <- compontents/globalComponents/globalHeader/Header.vue
             "
             />
         </div>

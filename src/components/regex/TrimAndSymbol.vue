@@ -7,11 +7,9 @@
             In js we can use trim to remove all the whitespaces from a string (except between words).
             But if you need to trim a string (between words as well) and remove special symbols use regex.
             "
-            codeblock="
-const removeWhiteSpacesAndSymbols = (value) => {
+            codeblock="const removeWhiteSpacesAndSymbols = (value) => {
     return value.replace(/[^\w]/g, '');
-};
-        "
+};"
         />
     </div>
 </template>
