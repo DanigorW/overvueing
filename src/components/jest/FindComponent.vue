@@ -5,11 +5,11 @@
             title="find, findAll, findComponent, findAllComponents, get"
             content="
             find & findAll are deprecated, don't use them.
-            Use findComponent & findAllComponents, what thay do ?
-            findComponent receives a css selcctor (class/id) and look for it on the mounted component. Same goes for findAllComponents but for all the elemnts.
-            Think of them as queryselector & querySelectorAll.
-            If you know for 100% that your class/id  exist on the template use get insted.
-            get get's the element immediately and run faster.
+            Use findComponent & findAllComponents. What are they doing?
+            findComponent receives a css selector (class/id) and looks for it on the mounted component. Same goes for findAllComponents, but for all the elements.
+            You can think of them as queryselector & querySelectorAll - they accomplish the same purpose.
+            If you know for sure that your class/id exists on the template - use get instead.
+            `get` get's the element immediately and runs faster.
             "
             codeblock="
 import { shallowMount } from '@vue/test-utils'

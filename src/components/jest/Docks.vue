@@ -4,8 +4,8 @@
             type="code"
             title="Done"
             content="
-Ok, this is the gist of testing with jest. Testing in general is a big topic, we learned the basics must import thing to know.
-How to test our state, async functionality, event, props, data, and some common matchers. 
+Ok, that's it about testing with jest. Testing in general is a huge topic, we've covered the basic most important things to know:
+how to test our state, testing async functionality, events, props, data, and some other most common cases.
 "
         />
     </div>

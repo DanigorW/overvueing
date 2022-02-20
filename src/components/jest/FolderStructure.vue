@@ -4,8 +4,8 @@
             type="code"
             title="Folder structure"
             content="
-            It's dosen't matter to much, BUT all your tests must be in a folders named tests/unit on the root level.
-            I personally structure the folders inside unit folder like modules in state.              
+            It's doesn't affect the code itself, BUT all of your tests must be in a folders named tests/unit on the root level.
+            I personally structure the folders inside unit folder like modules in the state.              
             "
             codeblock="
 tests/unit root level
