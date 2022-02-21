@@ -4,7 +4,7 @@
             <CodeBlock
                 type="code"
                 title="Install & config"
-                content="npm install firebase , in the future when firebase will be in version 10 to install the 9 version you will need to add the version you want like this: npm install firebase@9.0.0, To get the last version of firebase you just need to use npm intall firebase.
+                content="npm install firebase ,in the future, when firebase will be version 10, in order to install version 9 you will need to add the version you want, like this: npm install firebase@9.0.0. To get the last version of firebase you just need to use npm install firebase.
             "
                 codeblock="src/firebase/config.js
 import { initializeApp } from 'firebase/app';

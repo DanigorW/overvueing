@@ -5,8 +5,8 @@
             title="Css animations with keyframes"
             content="
   It's possible to create transitions with keyframes in a very simple way.
-  If needed you can combine transition and css animations.
-  If you have more complex animations with different duration times it's possible to add another property called type to sync the animation.
+  You can also combine transitions and css animations.
+  If you have more complex animations with different duration times - it's possible to add another property called `type` to sync the animation.
 "
             codeblock="//simple zoom in zoom out 
 <transition name='zoom' mode='out-in' type='animation'>

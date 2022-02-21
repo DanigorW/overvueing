@@ -4,8 +4,8 @@
             <CodeBlock
                 type="code"
                 title="Fetching a collection of documents"
-                content="Every collection can have unlimited documents, for exmaple 'users' is the collection name and you can have xxxxx of 'user' inside 'users'.
-                It's possible to access the data on every component you have, most common practice is to use Vuex sate management object'
+                content="Every collection can have unlimited documents, for exmaple 'users' is the collection name and you can have X amount of 'user' inside 'users'.
+                It's possible to access the data on every component you have, most common practice is to use Vuex state management object.'
             "
                 codeblock="import { db } from '../../../firebase/config'
 import { collection, getDocs } from 'firebase/firestore'

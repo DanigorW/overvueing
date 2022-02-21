@@ -4,7 +4,7 @@
             <CodeBlock
                 type="code"
                 title="Fetching singel document"
-                content="To fetch a singel document you need to know the id of the document. Firebase generate doc id automatically if you don't provide id."
+                content="To fetch a single document you need to know the id of the document. Im case you don't provide an id, Firebase generates the doc id automatically."
                 codeblock="import { db } from '../../../firebase/config'
 
 export default {

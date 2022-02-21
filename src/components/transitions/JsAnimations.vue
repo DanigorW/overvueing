@@ -6,15 +6,15 @@
             content="
     It's possible to add animations via js with 8 different hooks.
     The hooks are added to the transition html tag.
-    In this example im using only 6 hooks the other 2 are @enter-cancelled=' '
-@leave-cancelled=' ', in 99% present of the time you won't need to use them.
-Every function receive an el argument and enter and leave functions receives another argument called done.
-To make every thing work we will use the Web Animations API (fairly new DOM api, nor related to vue).
+    In this example I'm using only 6 hooks. The other 2 are @enter-cancelled=' '
+@leave-cancelled=' ' and in 99% present of the time you won't need to use them.
+Every function receives an `el` argument. `enter` and `leave` functions receive another argument - `done`.
+To make everything work we will use the Web Animations API (fairly new DOM api, nor related to Vue).
 "
             codeblock="//simple zoom in zoom out 
-// the css bindings = to false is talling vue that the animation is only using js
-// by default vue checks if there are animations via css and it's time consuming.
-// by providing the css set to false is saves time.
+// by setting the css binding to false we are telling Vue that the animation is only using js
+// by default Vue checks whether there are animations via css and it's time consuming.
+// by providing the css set to false we save some time.
 
 <transition 
 @before-enter='beforeEnter' 

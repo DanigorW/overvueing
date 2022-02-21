@@ -4,7 +4,7 @@
             <CodeBlock
                 type="code"
                 title="Authentication"
-                content="It's possible to use firebase authentication service to signup/signin/logout users and track the data. By default when user signsup he automatically receive a JWT if the user is loginout the JWT despire. We can track the status of the token and show content only to loggedin users."
+                content="It's possible to use firebase authentication service to signup/signin/logout users and track the data. By default, when the user signs up - he automatically receives a JWT token. On logout the JWT token expires. We can track the status of the token and show content only to the logged in users."
                 codeblock="import { db } from '../../../firebase/config'
 import { collection, getDocs , addDoc, doc, deleteDoc, updateDoc } from 'firebase/firestore'
 import {
