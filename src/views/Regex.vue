@@ -13,6 +13,15 @@
 
 <script>
 export default {
+    metaInfo: {
+        meta: [
+            {
+                name: "description",
+                content:
+                    "Regular expressions (regex or regexp) are extremely useful in extracting information from any text by searching for one or more matches of a specific search pattern. Why to use regex? it saves ALOT of time. Think of form validation for exmaple, if you have a few different input that you want to validate with diffrent conditions. regex can make your life easier.",
+            },
+        ],
+    },
     components: {
         Header: () =>
             import(

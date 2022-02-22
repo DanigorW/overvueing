@@ -11,16 +11,13 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger)
 
-
-
+import VueMeta from 'vue-meta'
+Vue.use(VueMeta)
 Vue.mixin({
     created: function() {
         this.gsap = gsap;
     }
 });
-
-
-
 
 Vue.config.productionTip = false
 Vue.config.devtools = false

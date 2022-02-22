@@ -1,17 +1,26 @@
 <template>
-  <div class="padding20">
-    <Plugins />
-  </div>
+    <div class="padding20">
+        <Plugins />
+    </div>
 </template>
 
 <script>
 export default {
-  components: {
-    Plugins: () =>
-      import(
-        /* webpackChunkName: "Plugins" */ "../components/pluginsForVue/Plugins.vue"
-      ),
-  },
+    metaInfo: {
+        meta: [
+            {
+                name: "description",
+                content:
+                    "useful plugins for vue that can help you during your development and save a lot of time.",
+            },
+        ],
+    },
+    components: {
+        Plugins: () =>
+            import(
+                /* webpackChunkName: "Plugins" */ "../components/pluginsForVue/Plugins.vue"
+            ),
+    },
 };
 </script>
 

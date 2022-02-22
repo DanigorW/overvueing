@@ -14,6 +14,15 @@
 
 <script>
 export default {
+    metaInfo: {
+        meta: [
+            {
+                name: "description",
+                content:
+                    "Vue provides a variety of ways to apply transition effects when items are inserted, updated, or removed from the DOM.",
+            },
+        ],
+    },
     components: {
         Header: () =>
             import(

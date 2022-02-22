@@ -12,6 +12,15 @@
 
 <script>
 export default {
+    metaInfo: {
+        meta: [
+            {
+                name: "description",
+                content:
+                    "Vue. js Directives are special HTML attributes that allow us to manipulate the DOM. Directives are very powerful and we use them every day. Common directives are v-if , v-for and v-model . The course covers all you need to know to be able to create your own, custom vue.",
+            },
+        ],
+    },
     components: {
         Header: () =>
             import(

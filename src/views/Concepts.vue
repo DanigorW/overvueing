@@ -11,6 +11,15 @@
 
 <script>
 export default {
+    metaInfo: {
+        meta: [
+            {
+                name: "description",
+                content:
+                    "Tricky concepts explained, we will go over Debounce,Closures,Promises,Promisification/Promisify,Recursion,Memoization, and many more.",
+            },
+        ],
+    },
     components: {
         Debounce: () =>
             import(
