@@ -4,8 +4,8 @@
             type="code"
             title="Promises"
             content="JavaScript is single threaded, meaning that two bits of script cannot run at the same time, they have to run one after another. A Promise is an object that represents the eventual completion (or failure) of an asynchronous operation, and its resulting value.
-            At first it's seems tricky to understand but after seeing a few exmaple it's  getting easier.
-            After knowing what a promise is in javascript it's much more easy to understand how 'fetch/axios' work behind the scenes (or any promised based code).
+            At first it seems tricky to understandm but after seeing a few exmaples it's getting easier.
+            After knowing what exactly a promise is in javascript, it's much easier to understand how 'fetch/axios' works behind the scenes (or any promise based code).
             "
             codeblock="const add = function(x, y) {
   return new Promise((resolve,reject) => {
