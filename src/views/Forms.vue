@@ -11,6 +11,15 @@
 
 <script>
 export default {
+    metaInfo: {
+        meta: [
+            {
+                name: "description",
+                content:
+                    "Learn how to create, validate, and utilize inputs from a form in Vue.js",
+            },
+        ],
+    },
     components: {
         Header: () =>
             import(

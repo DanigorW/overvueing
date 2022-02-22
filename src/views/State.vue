@@ -13,6 +13,15 @@
 
 <script>
 export default {
+    metaInfo: {
+        meta: [
+            {
+                name: "description",
+                content:
+                    "Large applications can often grow in complexity, due to multiple pieces of state scattered across many components and the interactions between them. To solve this problem, Vue offers vuex: our own Elm-inspired state management library. It even integrates into vue-devtools, providing zero-setup access to",
+            },
+        ],
+    },
     components: {
         Header: () =>
             import(
