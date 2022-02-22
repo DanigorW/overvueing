@@ -20,7 +20,7 @@ export default {
     },
 
     computed: {
-        ...mapGetters(["IS_SIDE_BAR_OPEN", "getuser"]),
+        ...mapGetters(["IS_SIDE_BAR_OPEN"]),
     },
 
     methods: {
