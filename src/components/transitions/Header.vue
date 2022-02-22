@@ -5,7 +5,7 @@
             type="code"
             title="Vue transitions"
             content="
-            Vue provides a variety of ways to apply transition effects when items are inserted, updated, or removed from the DOM.
+              Vue provides a variety of ways to apply transition effects when items are inserted, updated, or removed from the DOM.
             "
         />
     </div>

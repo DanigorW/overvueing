@@ -23,6 +23,7 @@ Vue.mixin({
 
 
 Vue.config.productionTip = false
+Vue.config.devtools = false
 
 new Vue({
     globalCss,

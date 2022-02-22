@@ -3,13 +3,15 @@
         <PageHeader title="In progress" />
         <CodeBlock type="normal" title="Slots" />
         <CodeBlock type="normal" title="Webpack" />
+        <CodeBlock type="normal" title="Css" />
         <CodeBlock type="normal" title="Seo" />
         <CodeBlock type="normal" title="Sitemaps" />
-        <CodeBlock type="normal" title="Algos" />
+        <CodeBlock type="normal" title="algorithms" />
         <CodeBlock type="normal" title="Vanilla js" />
         <PageHeader title="What's coming next" />
         <CodeBlock type="normal" title="Navigation in sections" />
         <CodeBlock type="normal" title="More code examples and case uses" />
+        <CodeBlock type="normal" title="vite" />
         <CodeBlock type="normal" title="Vue v3" />
         <CodeBlock type="normal" title="Jest for vue v3" />
         <CodeBlock type="normal" title="TypeScript" />
@@ -17,7 +19,7 @@
         <PageHeader title="Bug fixes" />
         <CodeBlock
             bg="#ff3333"
-            type="normal"
+            type="code"
             title="single quotes"
             content="Currently all the code examples are in single quotes.
             If you copy code from snippets your code editor can throw erros.
@@ -28,7 +30,7 @@
         />
         <CodeBlock
             bg="#ff3333"
-            type="normal"
+            type="code"
             title="typos"
             content="YuO Nokw hwo it is... :P"
         />

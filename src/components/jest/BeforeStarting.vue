@@ -4,14 +4,14 @@
             type="code"
             title="propsData"
             content="
-            When testing it's important to know that we can provide our tests props.
-            When we mount our components and thay have props the props are mounting to.
+            When testing it's important to know that we can provide props to our tests.
+            When we mount our components and they have props - the props are mounted too.
             We can change the default value of the props before we start testing.
-            Why to do so? If we want to test logic thet show diffrent content depends on props vlaue.
-            As you see in the example below, i'm changing the value of the defult props to check if the content 
+            Why to do so? If we want to test a logic that shows diffrent content depending on our props value.
+            As you see in the example below, I'm changing the value of the default props to check whether the content 
             exists on the page or not.
-            The content is visible on the page only if prop set to true, by default the prop valus is false.
-            The props name must be exact like the original props names.
+            The content is visible on the page only if prop is set to true, by default the prop valus is false.
+            The props names must be exactly like the original props names.
             "
             codeblock="import { shallowMount } from '@vue/test-utils'
 import yourComponent from '@/components/../yourComponent.vue'

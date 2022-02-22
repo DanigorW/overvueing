@@ -4,11 +4,11 @@
         <CodeBlock
             type="code"
             title="What is $refs"
-            content="If you familiar with queryselector & querySelectorAll from js refs here to replace them.
-            If you have element that you need or want to access we will us refs. 
-            This is simple example that changes the background color on load. 
-            Usuely we will want to use refs on some form of logic (show/hide loaders etc...)
-        "
+            content="If you're familiar with queryselector & querySelectorAll from js - refs are here to replace them.
+            It allows us to obtain a direct reference to a specific DOM element or child component instance after it's mounted. 
+            This is simple example in which we change a background color on load. 
+            Usually we will use refs when dealing with some form logic (for example show/hide loaders etc...),
+            programmatically focus an input on component mount, or initialize a 3rd party library on an element.  "
             codeblock="<template>
     <div>
         <h1 ref='test'>header text</h1>
