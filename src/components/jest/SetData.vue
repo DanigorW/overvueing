@@ -2,14 +2,13 @@
     <div class="container">
         <CodeBlock
             type="code"
-            title="trigger event, async await, data object"
+            title="Trigger event, async await, data object"
             content="
-trigger event expect  the name of the event.
-async await works exactly as expected, same as fetch with async await.
-The data object can have any real value that the component have, in this exmaple
-i'm seting iconHover to be true. By default he is set to false on the component we testing.
-It's possible to add values that not exist on the component, but there's no reason to that.
-        "
+Trigger event expects the name of the event and triggers an event asynchronously.
+We and use async await syntax to await the result data.
+The data object can contain any real value that our component has. In the following exmaple
+I'm setting iconHover to be true (by default it's set to false in the component we are testing).
+It's also possible to add values that don't exist in the component, but there's no reason to do that. "
             codeblock="import { shallowMount } from '@vue/test-utils'
 import yourComponent from '@/components/.../yourComponent vue'
 

@@ -4,7 +4,7 @@
             type="code"
             title="Appear property"
             content="
-        If you want the animation to fire on page load you can add the appear property.
+         If you want the animation to fire on page load you can add the appear property.
 "
             codeblock="//simple zoom in zoom out 
 <transition name='zoom' mode='out-in' type='animation' appear>

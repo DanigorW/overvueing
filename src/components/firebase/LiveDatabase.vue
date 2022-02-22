@@ -4,7 +4,7 @@
             <CodeBlock
                 type="code"
                 title="Live database & snapshot"
-                content="Firebase provides a real time live database that takes a snapshot on every change that happens on your database. Do to that you can get the data live witout reload the page."
+                content="Firebase provides a real time live database that takes a snapshot on every change that happens in your database. Do to that you can get the data live without reloading the page."
                 codeblock="import { db } from '../../../firebase/config'
 
 export default {

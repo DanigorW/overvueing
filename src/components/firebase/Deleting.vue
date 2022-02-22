@@ -4,7 +4,7 @@
             <CodeBlock
                 type="code"
                 title="Deleting document"
-                content="To delete a document you will need the id of the document you want to delete. In the example i'm deleting the document by id and also commiting mutation that delete the document from the users array (ui)."
+                content="To delete a document you will need to provide the id of the document you want to delete. In the example I'm deleting the document by id and also commiting mutation that deletes the document from the users array (ui)."
                 codeblock="import { db } from '../../../firebase/config'
 
 export default {

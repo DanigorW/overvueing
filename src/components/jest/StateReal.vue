@@ -4,14 +4,13 @@
             type="code"
             title="State (not mocked version) getters, mutations, actions"
             content="
-First of all we need to import what we want to test, you can have one global file that hold you entire state (not recommended!).
-Or you can have multiple modules for each functionality (recommended! split your state in to moudles, easy to manage and easy to test). But hither way we need to import it.
+First of all we need to import the state we want to test. You can have one global file which holds you entire state (not recommended!).
+Or you can have multiple modules for each functionality (recommended! split your state into moudles, this way it's easier to manage and to test). But either way, we need to import it.
 I'll approach it with the modules way.  
-NOTE jest don't recognize 'fetch/axios'. Jest doesn't run on your browser! way this is so important to know ? 
-usually actions in your state have some async code that fetch data and then commits a mutation that updates the state.
-There for we need to create a mock version of fetch on the global object that returns promise. The mock version will replace your real fetch.
-Testing the real fetch call is considered bad practice and can fail your tests if the api is down and takes more time.
-"
+NOTE: jest donesn't recognize 'fetch/axios'. Jest doesn't run on your browser! Why is it so important to understand? 
+The answer is - usually actions in your state have some async code that fetches data and then commits a mutation that updates the state with that data.
+Therefore we need to create a mock version of fetch on the global object that returns promise. The mock version will replace your real fetch.
+Testing the real fetch call is considered a bad practice and can cause your tests to fail if the api is down and takes a longer time to respond."
             codeblock="import Navbar from '@/store/modules/navbar/Navbar'
 import { createLocalVue } from '@vue/test-utils'
 import Vuex from 'vuex'

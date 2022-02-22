@@ -4,9 +4,10 @@
         <CodeBlock
             type="code"
             title="config version 8.0.0"
-            content="The example is on firebase version 8, in higher versions the config migth be diffrent, check the documentation.
+            content="
+            The example is on firebase version 8, in higher versions the config migth be different, check the documentation.
             NOTE - The api key is located in the frontend of your project. You dont need to worry about that, in firebase console you can configure multiple options that protect your database.
-            One way is to add you domain to a white list that only your url can send and get data.
+            One way is to add your domain to the white list, so that only your url can send and get data.
             "
         />
     </div>

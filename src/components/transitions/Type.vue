@@ -4,7 +4,7 @@
             type="code"
             title="Type property"
             content="
- To sync between css animations and css transitions we can add another type property that can accept transition or animation value.
+ To sync between css animations and css transitions we can add another type property that can accept a transition or animation value.
 "
             codeblock="//simple zoom in zoom out 
 <transition name='zoom' mode='out-in'>

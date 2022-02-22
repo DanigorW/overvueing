@@ -4,7 +4,7 @@
             type="code"
             title="On Routes"
             content="
-you can aniamte page transitions as well"
+You can animate page transitions as well"
             codeblock="<transition name='fade'>
   <router-view/>
 </transition>"

@@ -4,14 +4,13 @@
             type="code"
             title="toBe, toBeTruthy, toBeFalsy, not, exists, text, toContain"
             content="
-           toBe expect any value.
-           toBeTruthy automatically resolves as true.
-           toBeFalsy automatically resolves as false.
-           not can reverse boolean values.
-           exists check if the value exists.
-           text get all the wrapper text.
-           toContain check if the text provided is in the tamplate.
-
+            `toBe` expects any value.
+           `toBeTruthy` automatically resolves as true.
+           `toBeFalsy` automatically resolves as false.
+           `not` reverses boolean values.
+           `exists` checks whether the value exists.
+           `text` gets all the wrapper text.
+           `toContain` checks whether the text provided is contained in the template.
             "
             codeblock="import { shallowMount } from '@vue/test-utils'
 import yourComponent from '@/components/../yourComponent.vue'

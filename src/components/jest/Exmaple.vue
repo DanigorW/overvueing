@@ -4,16 +4,16 @@
             type="code"
             title="Simple exmaple"
             content="
-            After adding jest with vue add unit-jest, it generate a test example. Let's go over it.
+            After adding jest with vue add unit-jest, a test example is generated. Let's go over it.
             "
-            codeblock="//shallowMount mount the component for you, other options is to use { mount } insted           
+            codeblock="//shallowMount mount the component for you, other options is to use { mount } instead            
 import { shallowMount } from '@vue/test-utils'
 //the component we want to test
 import HelloWorld from '@/components/HelloWorld.vue'
 //the tests block, we can group a few tests together
 //the 'HelloWorld.vue' is just a discription of what we testing
 describe('HelloWorld.vue', () => {
-  //the it block is just a Test block that describe what we testing
+  //the it block is just a test block that describe what we testing
   //in the first parmeter we describe what we are testing (string)
   it('renders props.msg when passed', () => {
   //inside the callback function we will write the logic for the test  
