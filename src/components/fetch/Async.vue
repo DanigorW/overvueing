@@ -10,12 +10,11 @@
     try {
       const response = await fetch(url);
       const data = await response.json();
-      some manipulation on data...
+      //some manipulation on data...
       
     } catch (error) {
         alert(error)
     }
- 
 }"
         />
     </div>

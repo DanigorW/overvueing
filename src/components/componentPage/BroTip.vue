@@ -3,10 +3,10 @@
         <div class="container">
             <CodeBlock
                 type="code"
-                title="BRO TIP"
+                title="PRO TIP"
                 content="
-       Before starting any project stop for a sec and think about your components structure -
-         Which reusable components you need? Buttons? Forms? Popups? - what components will be in every route you have? Nav bar? Footer? etc... you got the point. This step can save you or your team A LOT OF TIME IN THE FUTURE.
+       Before starting any project stop for a sec and think about your components structure.
+         Which reusable components you need? Buttons? Forms? Popups? - what components will be in every route you have? Navbar? Footer? etc... you get the point. This step can save you A LOT OF TIME IN THE FUTURE.
         "
             />
         </div>

@@ -9,8 +9,7 @@ export default {
     metaInfo: {
         meta: [
             {
-                hid: "og:title",
-                name: "og:title",
+                name: "title",
                 content: `overvueing is one big sandbox for Vue.js developers. You will find a lot of information and detailed "real-life" examples of 'how to', as well as explanations of complex concepts: how to mange your state correctly, useful plugins and much more useful info!`,
             },
             {

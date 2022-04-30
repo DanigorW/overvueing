@@ -4,18 +4,17 @@
             type="code"
             title="How to use"
             content="
-        Let's assume you fetched data on create lifecycle hook and updated users array on your state.
-        To use the data we will need to use getter in any component you need the user array.
-        To show the data we will use v-for and create an html template that contains the data. 
-        Most of the time we will need input that can filter the data and this is the best example of the use
-        of computed properties
+        Two key rules to use computed property data, if you useing a getters to get the data put it in computed property.
+        If you know that the data you displaying to the user can change put it in computed property.
+        In the example below i'm using getters to get `GET_USERS` so there for the value stored in computed property.
+        On top of that i added the option to filter the data via user input and as you guessed it's also stored in computed property.
             "
             codeblock="<template>
   <div>
     <input type='text' v-model.trim='userInputValue' />
     <ul>
       <li v-for='(user, index) in _GET_USERS_FILTER' :key='index'>
-        { user.name }  <- NOTE - It needs to be in double curly brackets!
+        { user.name } 
       </li>
     </ul>
   </div>
@@ -33,7 +32,6 @@ export default {
   computed: {
     ...mapGetters(['GET_USERS']),
 
-    
     _GET_USERS_FILTER() {
         return this.GET_USERS.filter((item) => {
         return item.name.match(this.userInputValue);

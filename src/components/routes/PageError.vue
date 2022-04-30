@@ -6,7 +6,7 @@
                 title="Page not found 404"
                 content="
         Some times users will try to access routes that don't exist or they can have typo in the url - in that case you need to
-        provide default option in your router to programmaticly redirect them to other page (most common is the home page )  
+        provide default option in your router to programmaticly redirect them to other page (most common is the 404 page or the home page )  
         "
                 codeblock="{
  path: '/:catchAll(.*)*',

@@ -7,6 +7,7 @@
         <Mounted />
         <BeforeUpdate />
         <Updated />
+        <BeforeDestroy />
     </div>
 </template>
 
@@ -49,6 +50,10 @@ export default {
         Updated: () =>
             import(
                 /* webpackChunkName: "Updated" */ "../components/lifecycle/Updated.vue"
+            ),
+        BeforeDestroy: () =>
+            import(
+                /* webpackChunkName: "BeforeDestroy" */ "../components/lifecycle/BeforeDestroy.vue"
             ),
     },
 };

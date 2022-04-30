@@ -10,7 +10,7 @@
             codeblock="src/components/globalComponents/searchInput/SearchInput.vue
 <template>
     <form @submit.prevent class='search-form'>
-        <div class='form-header'>search</div>
+        <div class='form-header'><span>search</span></div>
         <input
             v-model.trim='userInput'
             @input='getDataFunc(userInput)'
@@ -22,8 +22,8 @@
 </template>
 
 <script>
-import {mapActions} from 'vuex';
-import globalDebounce from '../../../mixins/globalDebounce';
+import { mapActions } from 'vuex';
+import globalDebounce from '@/mixins/globalDebounce';
 
 export default {
   //by adding globalDebounce to the mixins option (provided by vue)
@@ -45,11 +45,11 @@ export default {
 
   mounted() {  
         //this.debounce is coming from globalDebounce import
-        //we need to use THIS to access it, 
+        //we need to use 'this' to access it, 
         //behind the scene it is injected to the methods object            
-        //this.getDataFunc on mounted() becomes a new function with the debounce option 
+        //this.FETCH_USER_DATA on mounted() becomes a new function with the debounce option 
         //and we are using it on user input event with PAYLOAD connected with V-MODAL to the user value   
-        this.getDataFunc = this.debounce(this.FETCH_USER_DATA, 500);
+        this.FETCH_USER_DATA = this.debounce(this.FETCH_USER_DATA, 500);
   },
 };
 </script> "

@@ -11,6 +11,16 @@ export default {
                 npm: "npm install @braid/vue-formulate"
             },
             {
+                title: "vueResizable",
+                installation: "https://www.npmjs.com/package/vue-resizable",
+                npm: "npm install vue-resizable"
+            },
+            {
+                title: "vuedraggable",
+                installation: "https://www.npmjs.com/package/vuedraggable",
+                npm: "npm i vuedraggable"
+            },
+            {
                 title: "Axios",
                 installation: "https://www.npmjs.com/package/vue-axios",
                 npm: "npm install axios vue-axios"

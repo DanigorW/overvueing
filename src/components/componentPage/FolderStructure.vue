@@ -4,16 +4,13 @@
             <CodeBlock
                 type="code"
                 title="Folder structure"
-                codeblock="
-
---compontents
+                codeblock="--compontents
 ---homePage
-----Header
+----header
 -----Header.vue <- compontents/homePage/header/Header.vue
 ---globalReusableComponents 
-----globalHeader 
------Header.vue <- compontents/globalComponents/globalHeader/Header.vue
-            "
+----globalButton 
+-----GlobalButton.vue <- compontents/globalReusableComponents/globalButton/GlobalButton.vue"
             />
         </div>
     </div>

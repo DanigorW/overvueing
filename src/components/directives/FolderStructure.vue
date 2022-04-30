@@ -4,16 +4,13 @@
             type="code"
             title="Folder Structure"
             codeblock="//directive folder and file
-src/components/directives/click-ouside.js
-
-//directives global folder and installation
-src/plugins/globalDirectives.js
+src/directives/clickOuside.js
 
 import Vue from 'vue';
-import clickOutside from '../directives/click-ouside.js';
+import clickOutside from '../directives/clickOuside.js';
 const GlobalDirectives = {
   install (Vue) {
-    Vue.directive('click-outside', clickOutside);
+    Vue.directive('clickOutside', clickOutside);
   }
 }
 

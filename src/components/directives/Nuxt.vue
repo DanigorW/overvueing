@@ -10,8 +10,8 @@ src/plugins/directives/click-ouside.js
 plugins/globalDirectives.js
 
 import Vue from 'vue';
-import clickOutside from './directives/click-ouside.js';
-Vue.directive('click-outside', clickOutside);       "
+import clickOutside from './directives/clickOuside.js';
+Vue.directive('clickOutside', clickOutside);       "
         />
     </div>
 </template>

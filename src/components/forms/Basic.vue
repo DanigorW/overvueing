@@ -15,8 +15,8 @@
                     type='text'
                     placeholder='First name'
                 />
-                <span>{firstName.length}/{max}</span> <- NOTE - it needs to be in double curly brackets!
-                <button>Submit</button>
+                <span>{firstName.length}/{max}</span>
+                <button @click='sendData(firstName)'>Submit</button>
             </div>
         </form>
     </div>
@@ -32,9 +32,11 @@ export default {
     },
 
     methods: {
-        checkInputLength(length) {
+        sendData(length) {
             if (this.firstName.length > length) {
                 this.firstName = this.firstName.substring(0, length);
+            } else {
+                //send data to backend
             }
         },
     },

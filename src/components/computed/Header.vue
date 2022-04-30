@@ -5,8 +5,9 @@
             type="code"
             title="Computed properties"
             content="
-          Template expressions are very convenient, but they are really meant for simple operations only. Templates are meant to describe the structure of your view. Putting too much logic into your templates can make them bloated and hard to maintain. This is why Vue.js limits binding expressions to one expression only. For any logic that requires more than one expression, you should use a computed property. 
-            "
+          
+Computed properties are another powerful feature from Vue that allows us to transform or perform calculations on our data and then easily reuse the result as an up-to-date variable in our template. Computed properties are very useful and should replace complex in-template expressions.
+           "
         />
     </div>
 </template>
