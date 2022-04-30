@@ -20,7 +20,13 @@ export default {
     //map methods receive an array -->
     ...mapGetters(['GET_ALL_USERS', 'GET_COUNTER']),
   },
+  methods:{
+    ...mapActions(['SOME_ACTION_FROM_STATE']),    
+  }
 };
+created(){
+    this.SOME_ACTION_FROM_STATE();   
+}
 </script>"
                 />
             </div>

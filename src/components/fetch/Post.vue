@@ -19,9 +19,9 @@
     const response = await fetch(url, config)
     const json = await response.json()
     if (response.ok) {
-         do something
+         //do something
     } else {
-         do something
+        //do something
     }
 } catch (error) {
     alert(error)

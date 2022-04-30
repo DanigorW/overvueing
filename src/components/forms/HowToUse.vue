@@ -9,45 +9,43 @@
       "
             codeblock="src/components/[any component that need form]
 <template>
-    <div class='form'>
-        <form @submit.prevent novalidate>
-            <ControlInput  
-                controlType='textarea'
-                v-model.trim='userData.message.val'
-                :isValid='userData.message.isValid'
-                errorMessage='*Required'
-                placeholder='Message'
-                @focus='clearValidity('message')'
-            />
+  <form @submit.prevent novalidate>
+      <ControlInput  
+          controlType='textarea'
+          v-model.trim='userData.message.val'
+          :isValid='userData.message.isValid'
+          errorMessage='*Required'
+          placeholder='Message'
+          @focus='clearValidity('message')'
+      />
 
-            <ControlInput  
-                v-model.trim='userData.fullName.val'
-                :isValid='userData.fullName.isValid'
-                errorMessage='*Required'
-                placeholder='Full name'
-                type='text'
-                @focus='clearValidity('fullName')'
-            />
+      <ControlInput  
+          v-model.trim='userData.fullName.val'
+          :isValid='userData.fullName.isValid'
+          errorMessage='*Required'
+          placeholder='Full name'
+          type='text'
+          @focus='clearValidity('fullName')'
+      />
 
-            <ControlInput  
-                v-model.trim='userData.email.val'
-                :isValid='userData.email.isValid'
-                errorMessage='*Required'
-                placeholder='Email'
-                type='email'
-                @focus='clearValidity('email')'
-            />
+      <ControlInput  
+          v-model.trim='userData.email.val'
+          :isValid='userData.email.isValid'
+          errorMessage='*Required'
+          placeholder='Email'
+          type='email'
+          @focus='clearValidity('email')'
+      />
 
-            <div class='btn' @click='submitForm'>
-                <Button
-                    text='Submit'
-                    fontSize='18px'
-                    height='60px'
-                    width='100%'
-                />
-            </div>
-        </form>
-    </div>
+      <div class='btn' @click='submitForm'>
+          <Button
+              text='Submit'
+              fontSize='18px'
+              height='60px'
+              width='100%'
+          />
+      </div>
+  </form>
 </template>
 
 <script>

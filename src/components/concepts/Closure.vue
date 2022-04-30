@@ -11,7 +11,7 @@
             In simple words - you get the access to the parent function's scope, even though it has all ready finished executing and not present on the call stack anymore - and yet you have access to all the data. 
            "
             codeblock="function makeFunc() {
-  const name = 'Mozilla';
+  const name = 'overvueing.com';
   function alertName() {
     alert(name);
   }

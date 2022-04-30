@@ -15,7 +15,7 @@ export default {
                 title="Object"
                 codeblock="export default {
     //NOTE it's not possible to use required
-    //and default in the same time only one can be added
+    //and default at the same time only one can be added
     props: {
         title: {
             type: String,

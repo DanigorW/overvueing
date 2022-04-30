@@ -31,6 +31,7 @@
     mounted() {},
     beforeUpdate() {},
     updated() {},
+    beforeDestroy() {},
     };
 </script>"
             />

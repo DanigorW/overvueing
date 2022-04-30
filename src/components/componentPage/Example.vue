@@ -3,61 +3,34 @@
         <div class="container">
             <CodeBlock
                 type="code"
-                title="Normal"
+                title="Normal without props"
+                content="This is simple button that doesn't do much, on click event it's possible to run any logic needed.
+                Now think about a scenario that you need to us the exact button component but only with different event and you need to change the styles a little bit.
+                You see where i'm going with this?.
+                "
                 codeblock="<template>
-     <header id='main-header' class='bg-grey'>
-        <div class='container'>
-          <h3>TITLE</h3>
-        </div>
-    </header>
+ <div>
+   <button @click='doSomething' class='btn'>click me</button>
+ </div>
 </template>  
 
-<style scoped>
-  .bg-grey {
-    backgrouund: grey;
-  }
-</style>
-            "
-            />
-            <CodeBlock
-                type="code"
-                title="With props"
-                codeblock="<template>
-     <header :class='type === 'normal' ? 'bg-grey' : 'bg-red'' id='main-header'>
-        <div class='container'>
-          <h3>{{}}</h3> <- title prop
-        </div>
-    </header>
-</template>  
-
+<script>
 export default {
-    //NOTE it's not possible to use required
-    //and default in the same time, only one can be added
-    props: {
-        type:{
-          default:'normal'
-        },
-
-        title: {
-            type: String,
-            required: true,
-        },
-        content: {
-            type: String,
-            default: 'default text if prop not provided',
-        },
-    },
+    methods: {
+      doSomething(){
+        //logic
+      }
+    }
 };
+</script>
 
 <style scoped>
-  .bg-grey {
-    backgrouund: grey;
+  .btn {
+    height:60px;
+    width:280px;
+    font-size:20px;
   }
-  .bg-red {
-    backgrouund: red;
-  }
-</style>
-"
+</style>"
             />
         </div>
     </div>

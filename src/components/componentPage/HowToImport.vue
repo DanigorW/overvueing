@@ -8,7 +8,7 @@
     components: {
         Header : () =>
             import(
-                /* webpackChunkName: 'Header' */ '../components/globalReusableComponents/globalHeader/Header.vue'
+                /* webpackChunkName: 'Header' */ '../components/globalReusableComponents/globalButton/GlobalButton.vue'
         ),
     },
 };

@@ -6,7 +6,7 @@
             codeblock="<template>
     <div>
        your text value | capitalize
-       { name | capitalize } <- NOTE - it needs to be in double curly brackets!
+       { name | capitalize }
     </div>
 </template>
 
@@ -14,7 +14,7 @@
 export default {
    filters: {
      capitalize (value) {
-     if (!value) return '';
+     if (!value) return ;
      value = value.toString();
      return value.charAt(0).toUpperCase() + value.slice(1);
   },

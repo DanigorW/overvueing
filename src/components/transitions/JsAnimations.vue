@@ -9,7 +9,8 @@
     In this example I'm using only 6 hooks. The other 2 are @enter-cancelled=' '
 @leave-cancelled=' ' and in 99% present of the time you won't need to use them.
 Every function receives an `el` argument. `enter` and `leave` functions receive another argument - `done`.
-To make everything work we will use the Web Animations API (fairly new DOM api, nor related to Vue).
+To make everything work we will use the Web Animations API (fairly new DOM api, not related to Vue).
+Side note: if you are planning on adding complex animations try to find a 3rd party library that do what you need for you, there's a lot of 3rd party libraries that target complex animations.
 "
             codeblock="//simple zoom in zoom out 
 // by setting the css binding to false we are telling Vue that the animation is only using js

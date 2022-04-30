@@ -2,6 +2,9 @@
     <div class="padding20">
         <Header />
         <Example />
+        <EmitEvents />
+        <HowToUse />
+        <Styles />
     </div>
 </template>
 
@@ -24,6 +27,18 @@ export default {
         Example: () =>
             import(
                 /* webpackChunkName: "Example" */ "../components/props/Example.vue"
+            ),
+        HowToUse: () =>
+            import(
+                /* webpackChunkName: "HowToUse" */ "../components/props/HowToUse.vue"
+            ),
+        Styles: () =>
+            import(
+                /* webpackChunkName: "Styles" */ "../components/props/Styles.vue"
+            ),
+        EmitEvents: () =>
+            import(
+                /* webpackChunkName: "EmitEvents" */ "../components/props/EmitEvents.vue"
             ),
     },
 };

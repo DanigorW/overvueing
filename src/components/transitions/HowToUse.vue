@@ -7,7 +7,7 @@
 You can wrap any HTML element you want to animate in a <transition name='some-class'> tag.
 The transition name is the class you want to add. Transition requires 4 classes to work, and the name you provide 
 needs to be a prefix to the class (you will see in the example). Animation duration depends on the time you
-provide in you transition, for exmaple: all 1s ease-in-out;. If transition is not provided, you can add duration property on the transition tag.   
+provide in your transition property, for exmaple: all 1s ease-in-out;. If transition is not provided, you can add duration property on the transition tag.   
  "
             codeblock="//simple fade in fade out
 <transition name='fade'>
@@ -30,10 +30,10 @@ provide in you transition, for exmaple: all 1s ease-in-out;. If transition is no
 
 //any name
 .[any name]-enter-active, .[any name]-leave-active {
-  do somting
+  //do somting
 }
 .[any name]-enter, .[any name]-leave-to {
-  do somting
+  //do somting
 }    
 </style>"
         />

@@ -6,7 +6,7 @@
         <Property />
         <Mode />
         <KeyFrames />
-        <Type />
+        <!-- <Type /> -->
         <Appear />
         <JsAnimations />
     </div>
@@ -48,10 +48,10 @@ export default {
             import(
                 /* webpackChunkName: "KeyFrames" */ "../components/transitions/KeyFrames.vue"
             ),
-        Type: () =>
-            import(
-                /* webpackChunkName: "Type" */ "../components/transitions/Type.vue"
-            ),
+        // Type: () =>
+        //     import(
+        //         /* webpackChunkName: "Type" */ "../components/transitions/Type.vue"
+        //     ),
         Appear: () =>
             import(
                 /* webpackChunkName: "Appear" */ "../components/transitions/Appear.vue"

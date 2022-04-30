@@ -5,7 +5,9 @@
                 type="code"
                 title="Navigation guards"
                 content="
-        As the name suggests, the navigation guards provided by vue-router are primarily used to guard navigations either by redirecting it or canceling it. There are a number of ways to hook into the route navigation process: globally, per-route, or in-component.
+        As the name suggests, the navigation guards provided by vue-router are primarily
+        used to guard navigations either by redirecting it or canceling it.
+        There are a number of ways to hook into the route navigation process: globally, per-route or in-component.
         "
                 codeblock="//global route guard
 router.beforeEach((to, from, next) => {

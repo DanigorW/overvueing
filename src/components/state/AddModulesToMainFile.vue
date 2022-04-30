@@ -3,7 +3,7 @@
         <div class="container">
             <CodeBlock
                 type="code"
-                title="Import module to main store file"
+                title="Import module & how to use"
                 codeblock="file - src\store\store.js (or index.js)
 
 import Vue from 'vue'

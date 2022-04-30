@@ -10,7 +10,7 @@
         If you need a global promisification function - look at the debounce example above, it's the same thing.
         "
             codeblock="const getNames = (callback) => {
-    const namesArry = ['igor', 'dima', 'danit']
+    const names = ['v', 'u', 'e']
     setTimeout(() => {
         callback(namesArry)
     }, 2000)

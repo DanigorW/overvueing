@@ -112,19 +112,4 @@ export default {
 .content-title {
     font-size: 24px !important;
 }
-
-/* pre,
-code {
-    color: #fff;
-    white-space: pre;
-    font-size: 16px;
-    background: #263849;
-    border-radius: 8px;
-    padding-left: 10px;
-    overflow-x: auto;
-} */
-
-/* .title {
-    color: #32475b;
-} */
 </style>

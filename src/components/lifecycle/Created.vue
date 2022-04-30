@@ -5,12 +5,16 @@
             title="created"
             content="
     Called synchronously after the instance is created. At this stage, the instance has finished processing the options which means the following have been set up: data observation, computed properties, methods, watch/event callbacks. However, the mounting phase has not been started, and the $el property will not be available yet.
+    created is great for fetching data before the component mounted to the DOM.       
             "
             codeblock="<script>
 export default {
     created(){
-        //fetch data from backend logic or use action
-        //that commits a mutations 
+        fetch('https://jsonplaceholder.typicode.com/todos/1')
+        .then(response => response.json())
+        .then(json => {
+            //do something
+        })
     },
 }
 </script>"

@@ -5,11 +5,13 @@
             title="beforeMount"
             content="
   Called right before the mounting begins: the render function is about to be called for the first time.
+  Honestly i never used this lifecycle hook... so there for i don't have an example to provide.          
             "
             codeblock="<script>
 export default {
     beforeMount(){
       //do something
+      //what? i don't know :)
     },
 }
 </script>"

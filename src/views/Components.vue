@@ -2,6 +2,7 @@
     <div class="padding20">
         <Header />
         <Example />
+        <Props />
         <Dynamic />
         <FolderStructure />
         <Options />
@@ -29,6 +30,10 @@ export default {
         Example: () =>
             import(
                 /* webpackChunkName: "Example" */ "../components/componentPage/Example.vue"
+            ),
+        Props: () =>
+            import(
+                /* webpackChunkName: "Props" */ "../components/componentPage/Props.vue"
             ),
         FolderStructure: () =>
             import(

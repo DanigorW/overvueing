@@ -1,7 +1,7 @@
 export default {
     state: {
         isSidebarOpen: true,
-        routes: ['Home', 'Installation', 'Components', 'Computed', 'Lifecycle', 'Props',
+        routes: ['Home', 'Installation', 'Props', 'Components', 'Lifecycle', 'Computed',
             'Watchers', 'Routes', 'State', 'Mixins', 'Filters', 'Directives',
             'Fetch', 'Forms', 'Refs', 'Transition', 'Jest', 'Firebase', 'Regex', 'Concepts', 'Plugins'
         ],
