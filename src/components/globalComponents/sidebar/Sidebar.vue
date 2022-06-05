@@ -11,6 +11,7 @@
             </div>
 
             <div
+                @click="openDropDowns(item)"
                 class="router-links"
                 v-for="(item, index) in filterAllRoutes"
                 :key="index"
@@ -19,6 +20,19 @@
                     :to="{ name: item.split(' ')[0], query: $route.query }"
                     >{{ item }}</router-link
                 >
+            </div>
+            <!-- this section is if inside dropdown needed via sub nav -->
+            <div class="dropdown-links">
+                <div
+                    @click="openDropDowns(item)"
+                    class="drop-down-link router-links"
+                    v-for="(item, index) in GET_DROPDOWN_LINKS"
+                    :key="index"
+                >
+                    <router-link :to="{ name: `${item.split(' ')[0]}` }"
+                        >{{ item }}
+                    </router-link>
+                </div>
             </div>
         </div>
     </transition>
@@ -30,7 +44,31 @@ export default {
     data() {
         return {
             userValue: "",
+            isUiElementUiOpen: false,
+            active: "",
         };
+    },
+    methods: {
+        openDropDowns(link) {
+            console.log(link);
+            if (link == "Ui elements") {
+                this.isUiElementUiOpen = !this.isUiElementUiOpen;
+                this.active = "Ui elements";
+            }
+        },
+    },
+    computed: {
+        ...mapGetters([
+            "IS_SIDE_BAR_OPEN",
+            "GET_ALL_ROUTES",
+            "GET_DROPDOWN_LINKS",
+        ]),
+
+        filterAllRoutes() {
+            return this.GET_ALL_ROUTES.filter((route) =>
+                route.toLowerCase().match(this.userValue.toLowerCase())
+            );
+        },
     },
     mounted() {
         this.gsap.from("#sidebar", 1.8, {
@@ -52,19 +90,13 @@ export default {
                 route.addEventListener("mouseleave", () => hover.reverse());
             });
     },
-    computed: {
-        ...mapGetters(["IS_SIDE_BAR_OPEN", "GET_ALL_ROUTES"]),
-
-        filterAllRoutes() {
-            return this.GET_ALL_ROUTES.filter((route) =>
-                route.toLowerCase().match(this.userValue.toLowerCase())
-            );
-        },
-    },
 };
 </script>
 
 <style scoped>
+.active-class-dropdown-links {
+    color: red;
+}
 /* width */
 ::-webkit-scrollbar {
     width: 4px;
@@ -94,14 +126,17 @@ export default {
     overflow-y: auto;
 }
 
-a {
+a,
+.drop-down-link {
     margin-bottom: 10px;
     font-size: 20px;
 }
 
-.router-links {
+.router-links,
+.drop-down-link {
     padding: 0 15px;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 @media (max-width: 1000px) {

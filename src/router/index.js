@@ -118,11 +118,18 @@ export const routes = [{
         component: () =>
             import ( /* webpackChunkName: "Slots" */ '../views/Slots.vue')
     },
+
     {
         path: '/vanilla',
         name: 'Vanilla',
         component: () =>
             import ( /* webpackChunkName: "Vanilla" */ '../views/Vanilla.vue')
+    },
+    {
+        path: '/Ui',
+        name: 'Ui',
+        component: () =>
+            import ( /* webpackChunkName: "UiElements" */ '../views/UiElements.vue')
     },
     {
         path: '/algos',

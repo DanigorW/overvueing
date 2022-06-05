@@ -2,7 +2,6 @@
     <div id="app" :class="IS_SIDE_BAR_OPEN ? 'no-scroll' : ''">
         <Nav />
         <Sidebar />
-
         <router-view
             :class="IS_SIDE_BAR_OPEN ? 'width87' : 'width100'"
             class="layout-container"
