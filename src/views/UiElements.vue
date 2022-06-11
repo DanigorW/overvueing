@@ -31,10 +31,21 @@
             <div>
                 <Steps :value="currentStep" :steps="steps" />
                 <div class="btns">
-                    <button @click="previousStep">Previous</button>
-                    <button @click="nextStep">Next</button>
+                    <button class="btn" @click="previousStep">Previous</button>
+                    <button class="btn" @click="nextStep">Next</button>
                 </div>
             </div>
+        </div>
+        <TextareaHeader />
+        <div class="textarea-container">
+            <Textarea />
+        </div>
+        <DrawerHeader />
+        <div class="drawer-container">
+            <button class="btn" @click="isDrawerOpen = !isDrawerOpen">
+                Open drawer
+            </button>
+            <Drawer v-model="isDrawerOpen"> asdasdasd </Drawer>
         </div>
     </div>
 </template>
@@ -44,6 +55,7 @@ export default {
     data() {
         return {
             currentStep: 0,
+            isDrawerOpen: false,
             cheackboxs: [
                 {
                     text: "custom checkbox",
@@ -137,6 +149,14 @@ export default {
             import(
                 /* webpackChunkName: "StepsHeader" */ "../components/uiElements/StepsHeader.vue"
             ),
+        TextareaHeader: () =>
+            import(
+                /* webpackChunkName: "TextareaHeader" */ "../components/uiElements/TextareaHeader.vue"
+            ),
+        DrawerHeader: () =>
+            import(
+                /* webpackChunkName: "DrawerHeader" */ "../components/uiElements/DrawerHeader.vue"
+            ),
         Checkbox: () =>
             import(
                 /* webpackChunkName: "Checkbox" */ "../components/uiElements/Checkbox.vue"
@@ -157,6 +177,14 @@ export default {
             import(
                 /* webpackChunkName: "Steps" */ "../components/uiElements/Steps.vue"
             ),
+        Textarea: () =>
+            import(
+                /* webpackChunkName: "Textarea" */ "../components/uiElements/Textarea.vue"
+            ),
+        Drawer: () =>
+            import(
+                /* webpackChunkName: "Drawer" */ "../components/uiElements/Drawer.vue"
+            ),
     },
 };
 </script>
@@ -166,8 +194,10 @@ export default {
 .radio-container,
 .toggle-container,
 .tabs-container,
-.steps-container {
-    padding-left: 20px;
+.steps-container,
+.textarea-container,
+.drawer-container {
+    padding: 0 20px;
 }
 .radio-container div {
     display: flex;
@@ -180,7 +210,7 @@ export default {
     justify-content: center;
     margin-top: 15px;
 }
-.btns button {
+.btn {
     cursor: pointer;
     background: #41b883;
     color: #fff;

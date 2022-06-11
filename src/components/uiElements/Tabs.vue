@@ -20,7 +20,6 @@ export default {
     props: {
         tabs: {},
         value: {},
-        classesToAdd: {},
     },
     methods: {
         setCurrent(tab) {

@@ -1,11 +1,15 @@
 <template>
     <div class="container">
-        <PageHeader title="UI elements" content="" />
+        <PageHeader
+            title="UI elements - you don't need 3rd party libraries for ui components"
+            content=""
+        />
         <CodeBlock
             type="code"
             title="Here you will finde UI compontents that ready to use"
-            content="If you see something you like just go to the component page and copy the code.
-            very useful when you don't want to use 3rd party libraries and get full control over your code and style.'
+            content="If you see something you like just click on 'show code' and copy the code - NOTE: you
+            will need to changed the single quotes to double quotes after copying the code (i'm working on fixing this issue).
+            You can easily conect every component to work directly with Vuex.
             "
         />
     </div>

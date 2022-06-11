@@ -38,10 +38,14 @@ html {
     margin: 0 auto;
 }
 
+.show-code-container {
+    text-align: right;
+}
+
 .show-code {
     margin: 0;
     padding: 0;
-    display: block;
+    display: inline-block;
     text-align: right;
     cursor: pointer;
     color: #41b883;

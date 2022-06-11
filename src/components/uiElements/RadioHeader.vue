@@ -1,10 +1,11 @@
 <template>
     <div class="container">
         <CodeBlock type="code" title="Custome radio" content="" />
-        <span class="show-code" @click="showCode = !showCode">{{
-            showCode ? "close" : "Show code"
-        }}</span>
-
+        <div class="show-code-container">
+            <span class="show-code" @click="showCode = !showCode">{{
+                showCode ? "close" : "Show code"
+            }}</span>
+        </div>
         <transition name="fade">
             <div v-if="showCode">
                 <CodeBlock
